@@ -1,0 +1,36 @@
+body {
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.calibre1 {
+	font-family: sans-serif;
+}
+
+.heading {
+	border-bottom: solid 1px #000000;
+}
+
+.about {
+	-moz-column-count: 2; 
+	-moz-column-gap: 20px;
+	-webkit-column-count: 2; 
+	-webkit-column-gap: 20px;
+	column-count: 2; 
+	column-gap: 20px;
+	text-align: justify;
+}
+
+.teletype {
+	margin-left: 40px;
+	margin-right: 40px;
+	font-family: monospace;
+}
+
+.tester {
+	font-style: oblique;
+	font-family: monospace;
+	font-size: 1.2em;
+}
