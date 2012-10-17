@@ -5,8 +5,22 @@ body {
 	margin-bottom: 10px;
 }
 
+.header {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(92, 92, 92, 0.2),
+		-2px 2px 2px rgba(92, 92, 92, 0.2),
+		2px -2px 2px rgba(92, 92, 92, 0.2),
+		-2px -2px 2px rgba(92, 92, 92, 0.2);
+
+	border: solid 2px rgb(128, 128, 128);
+	text-align: center;
+	page-break-after: always;
+}
+
+
 .calibre1 {
-	font-family: sans-serif;
+	font-family: droid-sans;
 }
 
 .heading {
@@ -14,13 +28,8 @@ body {
 }
 
 .about {
-	-moz-column-count: 2; 
-	-moz-column-gap: 20px;
-	-webkit-column-count: 2; 
-	-webkit-column-gap: 20px;
-	column-count: 2; 
-	column-gap: 20px;
 	text-align: justify;
+	page-break-after: always;
 }
 
 .teletype {
