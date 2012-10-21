@@ -20,11 +20,12 @@ body {
 
 
 .calibre1 {
-	font-family: droid-sans;
+	font-size: 2em;
 }
 
 .heading {
 	border-bottom: solid 1px #000000;
+	font-size: 1.5em;
 }
 
 .about {
@@ -43,3 +44,9 @@ body {
 	font-family: monospace;
 	font-size: 1.2em;
 }
+
+.chapter {
+	font-family: droid-sans;
+	font-size: 0.8em;
+}
+
