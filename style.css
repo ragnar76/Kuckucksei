@@ -18,14 +18,14 @@ body {
 	page-break-after: always;
 }
 
-
-.calibre1 {
-	font-size: 2em;
-}
-
 .heading {
 	border-bottom: solid 1px #000000;
 	font-size: 1.5em;
+	text-align: center;
+	text-shadow: 2px 2px 2px rgba(92, 92, 92, 0.2),
+		-2px 2px 2px rgba(92, 92, 92, 0.2),
+		2px -2px 2px rgba(92, 92, 92, 0.2),
+		-2px -2px 2px rgba(92, 92, 92, 0.2);
 }
 
 .about {
