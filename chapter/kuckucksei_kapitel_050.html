@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="de"><head>
+<title>Clifford Stoll - Das Kuckucksei : Titel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="chapter">
+
+<p class="heading">50. Kapitel</p>
+<p>" Sagen Sie zu niemandem was! " Mike Gibbons war am Telefon und wies mich an, der CIA die Nachricht nicht zu
+übermitteln. " Äh, tut mir leid, Mike, aber ich hab es diesem Tejott schon erzählt. " Ich fragte mich, ob Mike schon
+mal was von Tejott gehört hatte. " Dann kümmere ich mich darum. Dieser Brief, den Sie uns geschickt haben, ist ziemlich
+aufschlussreich. Wir haben einige Labortests damit gemacht. " " Was haben Sie erfahren? " fragte ich. Mike war
+gesprächiger als gewöhnlich, vielleicht konnte ich dem ein wenig nachhelfen. " Kann ich Ihnen nicht sagen, aber wir
+nehmen diesen Fall nicht auf die leichte Schulter. Manche Aspekte sind ziemlich, na, eben ziemlich aufschlussreich.
+"</p>
+<p>Mike benutzte das Wort jetzt schon zum zweiten Mal. Da war was im Busch. " Ach übrigens " , fuhr er fort," könnten
+Sie mir ein halbes Dutzend Blätter mit Ihrem Briefkopf schicken? " Das FBI möchte den Briefkopf meines Labors? Es
+klang, als ob sie auf Laszlos Brief antworten wollten. Aber was würde “<span class="tester">ich</span>” diesem Typ
+mitteilen? Wie wär's mit:</p>
+<p class="teletype">Lieber Mr. Balogh,<br>
+Sie wurden als Hauptgewinner in der großen SDINET−Lotterie gezogen...</p>
+<p>Die nächsten Tage spielte der Hacker Verstecken mit mir. Er tauchte drei Minuten auf, sah sich unsere Passwortdatei
+an und loggte sich aus. Mein Köder wurde von Tag zu Tag verlockender. Aber er knabberte nicht daran.</p>
+<p>Am Montagmorgen kam er um 6.54 Uhr in unser System. Von meinem beharrlichen Piepser geweckt, holte ich aus und
+schlug auf den Wecker. Der falsche Krachmacher. Das Piepsen ging weiter. Dreimal. S für Sventek. Der Hacker, drüben im
+Unix−4−Computer.</p>
+<p>Wie aufgezogen rannte ich zu meinem Macintosh, schaltete ihn ein und rief Steve White bei Tymnet an. " Steve, jemand
+hat meinen Alarm ausgelöst " , sagte ich, immer noch ein bischen benommen." Ich hab noch nicht überprüft, wer, aber
+könnten Sie die Verfolgung starten? " " In Ordnung. Bin in zehn Sekunden dran " , sagte er." Da ist es Kommt über den
+Satelliten Westar. Rufadresse 2624 DNIC 5421 − 0421. Das ist Bremen. Ich sag der Bundespost Bescheid " Ich hatte die
+Nummer mitgeschrieben. Jetzt war mein Heimcomputer warmgelaufen. Steve hatte gerade eine internationale Verfolgung in
+weniger als einer Minute durchgeführt.</p>
+<p>Ich wählte mein Laborsystem von meinem Pippifax−Computer und untersuchte den Unix−4−Rechner. Da war Sventek, er war
+gerade am Gehen. Vier Minuten war er drin gewesen. Lang genug, um ihn zu entdecken und seine Spur zu verfolgen. Lang
+genug, um mir den Morgen zu verderben. Ich würde nicht mehr einschlafen können, also radelte ich hinauf zum Labor.
+Drüben im Osten begleitete mich der Morgenstern. Die Venus.</p>
+In vier Minuten hatte dieser Hacker einen neuen Teil meines Betriebssystems ausgeforscht. Er suchte in unserem
+Unix−Computer nach einem Programm namens X−preserve. Hey, ich weiß, was er tut. Er sucht nach dem X−preserve−Loch im
+VI−Editor. Dave Cleveland und ich hatten das vor fast einem Jahr gestopft. Aber dieser Hacker versucht erst jetzt, es
+auszunutzen.
+<p>VI ist der Unix−Editor für den Bildschirm. Als Bill Joy ihn schrieb, damals 1980, hielten ihn die Leute für die
+hübscheste Erfindung weit und breit. Er ließ einen zusehen, wenn man Worte verschob ? Wenn man ein Wort in der Mitte
+eines Absatzes entfernen wollte, bewegte man einfach den Cursor auf dieses Wort, und ab ging die Post! VI war der
+Urahne von Hunderten von Textverarbeitungssystemen. Heute finden es die Unix−Leute etwas schwerfällig − es hat weder
+die Vielseitigkeit von Gnu−Emacs noch die Benutzerfreundlichkeit moderner Editoren. Trotzdem taucht VI in jedem
+Unix−System auf.</p>
+<p>Was passiert, wenn Sie einen längeren Artikel schreiben, und der Computer kriegt einen Schluckauf − zum Beispiel, es
+gibt einen Stromausfall, oder irgendein Idiot zieht den Stecker raus ? Dann war früher alles futsch, was Sie eingetippt
+hatten. Der VI−Editor rettet mit Hilfe von X−preserve, was Sie gemacht haben Wenn der Computer wiederaufersteht von den
+Toten, setzt X−preserve die Stücke Ihrer Arbeit wieder zusammen. Dann fragt es Sie wohin es diese zusammengestoppelte
+Datei speichern soll. Die meisten Leute sagen dann: " Ach, tu sie in mein Privatverzeichnis. "</p>
+<p>Aber X−preserve prüft nicht, wo Sie diese Datei ablegen. Sie können auch sagen: “<span class="tester">Steck die
+Datei in das Systemdateienverzeichnis</span> ”, und dann tut es das. Genau das probierte der Hacker. Er machte eine
+Datei, die sagte: “<span class="tester">Gib Sventek Systemprivilegien.</span>” Er schickte den VI−Editor los und
+brachte ihn zum Stolpern, indem er ihm ein “<span class="tester">interrupt</span>”−Steverzeichen eingab. VI spürte ein
+Problem und speicherte seine Datei in Stücken.</p>
+<p>Der nächste Schritt des Hackers? Dem X−preserve sagen− “<span class="tester">Diese Datei ins Systemverzeichnis
+schieben.</span>” In ein paar Minuten würde Unix sie ausbrüten, und er war Systemverwalter Aber das Kuckucksei fiel aus
+dem Nest. Wir hatten das X−preserve −Programm in Ordnung gebracht... es prüft jetzt wer Sie sind und verhindert, dass
+Sie eine Datei in die Systemumgebung schieben. Armer Kerl. Er war bestimmt am Boden zerstört. Gewiß, ein eleganter
+Trick, um in Systeme einzubrechen, aber hier in Berkeley funktioniert er einfach nicht</p>
+<p>Oh, ich hatte unsere anderen Löcher offengelassen. Er kann immer noch Gnu−Emacs benutzen, um sein Programmei in das
+Systemnest zu legen. Und ich habe für ihn absichtlich zwei andere Löcher in unserem System gelassen, die noch auf ihre
+Entdekkung warten. Nur um seine Fähigkeiten auszutesten. Bis jetzt schlägt er sich ganz tapfer. All das dauerte drei
+Minuten. Er gab sein Programm perfekt ein − kein einziger Tippfehler. Als ob er das schon oft gemacht hätte. Als ob er
+es geübt hätte, in fremde Computer einzubrechen.</p>
+<p>Wie viele andere Systemverwalter hatten X−preserve bis jetzt noch nicht geflickt? Wie viele andere Löcher warteten
+immer noch darauf, von ihm entdeckt zu werden? Wen sollte ich warnen ? Wie sollte ich das den Leuten mit den weißen
+Westen mitteilen, ohne gleichzeitig den Übeltätern dadurch einen Tip zu geben ?</p>
+<p>Zu spät. Die Typen mit den schmutzigen Westen wissen es schon. Obwohl diese Verbindung nach Berkeley nur ein paar
+Minuten gedauert hatte, berichtete die Universität Bremen, er sei 45 Minuten angemeldet gewesen. Und die Bundespost
+verfolgte die gesamte Verbindung noch einmal zu derselben Person in Hannover zurück. Ich erfuhr, dass die Universität
+Bremen den Datenverkehr des Hackers ebenfalls ausdruckte. Jetzt beobachteten wir den Kerl zu zweit. Er konnte frei
+herumlaufen, verstecken konnte er sich nicht.</p>
+<p>In den letzten paar Monaten hatte er an den SDINET−Dateien nur geknabbert, die Namen dieser Dateien gesehen und
+bemerkt, dass ich jeden Tag neue Notizen und Briefe hinzufügte. Aber er las sie einfach nicht. Ich fing an, meine
+Zweifel zu haben, ob er sich überhaupt noch für unsere Dichtung interessierte.</p>
+<p>Am Mittwoch, dem 20. Mai, wurden meine Zweifel beseitigt. Er klinkte sich um 5 Uhr morgens ein und machte einen Dump
+aller SDINET−Dateien. Da gab es einen Brief ans Pentagon mit der Bitte um höhere Mittel und einen Vortrag über
+“<span class="tester">Horizontdurchbrechendes Radar</span>” − ein Schlagwort, das ich in einer Elektronikzeitschrift
+gefunden hatte. Eine weitere Notiz schilderte Tests eines neuen Supercomputers, inklusive der ParallelProzessoren. Ich
+hatte versucht, meine absolute Ahnungslosigkeit auf diesen Gebieten durch Jargon zu vertuschen.</p>
+<p>Er schluckte brav. Eines nach dem andern. Ich wollte, dass er jede fingierte Datei einzeln abrief und nicht einfach
+sagen konnte: " Gib mir alle Dateien. " Also fügte ich ein paar Stolpersteine ein. Dateien, die viel zu lang waren, um
+sie auszudrucken. Dann einige kurze Dateien voller Kauderwelsch − Computergulasch. Er konnte diese vergifteten Dateien
+nicht einfach ausdrucken, also musste er jede zuerst prüfen. Das machte ihn langsamer, und er blieb länger im System:
+mehr Zeit zur Verfolgung.<br></p>
+<p>Neun Monate? Wir hatten diesen gewieften Mistkerl fast ein ganzes Jahr beobachtet. Und die Telefonrechnungen von
+Mitre wiesen aus, dass er dort schon seit mehr als 12 Monaten einbrach. Was für eine Hartnäckigkeit! Und wieder fragte
+ich mich, was diesen Typ antrieb. Klar, mich würd's auch jucken, eine Nacht oder zwei einfach so rumzuspielen.
+Vielleicht würd's mir sogar ein paar Wochen Spaß machen. Aber ein ganzes Jahr? Nacht für Nacht geduldig Türklinken von
+Computern drücken? Dann müsste man mich schon bezahlen.</p>
+<p>Bezahlen? Wurde der Hacker bezahlt? Als er die nächsten paarmal auftauchte, hatte ich seinen SDINET−Weidegründen
+nicht viel hinzugefügt. Meine Phantomsekretärin Barbara Sherwin hatte auf dem Textsystem lediglich eine Aktennotiz
+hinterlassen, dass sie eine Woche Urlaub wolle. Der Hacker las das und musste damit eigentlich verstanden haben, warum
+es so wenig neue Informationen gab.</p>
+<p>Aber anstatt dafür durch die LBL−Dateien zu stromern, ging er hinaus ins Milnet und versuchte wieder einmal
+geduldig, Passwörter zu raten. Einer meiner erdichteten SDINET−Berichte erwähnte ein Spezialprojekt an der Raketenbasis
+White Sands. Tatsächlich verbrachte er fünfzehn Minuten damit, an deren Tür zu kratzen. Die Computer von White Sands
+zeichneten ein Dutzend Einbruchsversuche auf, aber keiner war erfolgreich gewesen. Chris McDonald, das
+Computersicherheitsas von White Sands, rief mich in derselben Stunde an: " Jemand löst in meinem WSMR05−Computer Alarm
+aus. " " Ich weiß. Es ist derselbe Hacker. " " Er probiert Konten aus, die nicht existieren. Namen wie SDINET. Auf
+diese Weise schafft er's wirklich nicht reinzukommen " , sagte Chris überzeugt." Außerdem braucht diese Maschine zwei
+Passwörter, und wir haben sie letzte Woche alle geändert. " White Sands war auf der Hut.</p>
+<p>Der Hacker verschwendete nur seine Zeit, als er dreißig andere Computer genauso ausprobierte. Das Korean Advanced
+Institute of Science and Technology. Das Army Safety Center in Fort Rukker. Strategic Air Command. Die Defense Nuclear
+Agency in der Luftwaffenbasis Kirtland. Obwohl er es immer noch mit Kontennamen wie “<span class="tester">guest</span>”
+und “<span class="tester">system</span>” versuchte, benutzte er auch “<span class="tester">sdinet</span>”. Zweifellos
+glaubt er fest daran.</p>
+<p>Die Reisen des Hackers durch mein System wurden mittlerweile größtenteils Routine. Ich rannte immer noch zum
+Schaltraum, wenn mein Piepser sich meldete, aber ich glaube, ich hatte mich an die Maus im Käfig gewöhnt. Acht Monate
+hatte ich gewartet. Noch ein bischen länger auf der Lauer zu liegen, machte mir partout nichts aus. In der zweiten
+Juniwoche absolvierte er von 15.38 Uhr bis 16.13 Uhr eine Stippvisite in meinem Computer. Wir verfolgten ihn ganz
+zurück − wieder Hannover − und standen die ganze Zeit über mit dem FBI in Verbindung.</p>
+<p>Sofort, nachdem er sich in meinen Computer in Berkeley eingeloggt hatte, sprang er ins Milnet und versuchte, sich in
+einige Computer der Unisys Corporation in Paoli, Pennsylvania, einzuloggen. Systeme namens “<span class=
+"tester">Omega</span>”, “<span class="tester">Bigburd</span>” und “<span class="tester">Rosencrantz</span>” (Ich
+wartete auf “<span class="tester">Güldenstern</span>”, aber auf den stieß er nie) Dann probierte er es bei dem
+Unisys−System BurdVAX Er kam beim ersten Versuch rein. Kontenname “<span class="tester">Ingres</span>”, Passwort
+“<span class="tester">Ingres</span>”. Nicht schlecht... er kennt die Ingres−Datenbank Aber warum probierte er überhaupt
+diese Unisys−Computer aus? Weshalb waren sie ihm aufgefallen? Vielleicht hatte ihm jemand gesagt, er solle sie
+suchen.</p>
+<p>Vielleicht arbeitete Laszlo Balogh aus Pittsburgh in Paoli. Der Atlas ließ mich die Sache anders sehen. Paoli ist
+eine Vorstadt von Philadelphia, Hunderte Meilen weit weg von Pittsburgh. Irgendwie wusste er von den Unisys−Computern
+in Paoli, Pennsylvania.</p>
+Als Ingres−Benutzer hatte der Hacker nur begrenzte Privilegien, aber nahm, was er kriegen konnte. Sehr nützlich für ihn
+war, dass er einen Weg fand, die Unisys−Passwortdatei zu lesen. Er kopierte das ganze Ding in seinen Computer zu Hause.
+Dann listete er mehrere Dateien auf, die niemals allgemein lesbar sein sollten: die Liste der Telefonnummern, die der
+Unisys−Computer kannte, und seine Netzwerkadressendatei.
+<p>Ich wusste schon, was er mit der Unisys−Passwortdatei machen würde. Er würde sie dechiffrieren, indem er ein
+Wörterbuch drüberhetzte. Dann würde er sich in ein Konto mit mehr Privilegien einloggen und noch mehr Macht ansammeln.
+Die anderen Dateien waren genauso sicherheitsrelevant. Sie lieferten dem Hacker Telefonnummern benachbarter Computer
+und eine Karte des lokalen Netzwerks von Unisys. Jetzt wusste er, wie man sich von der BurdVAX bei anderen Computern
+anmeldete... er musste es nicht selbst herausfinden.</p>
+<p>Aber gerade als ich zusah, meldete er sich ab. War er ängstlich: Nein, nur geduldig. Er prüfte andere Computer.
+Zuerst das System von Fort Buckner in Okinawa. Ja, sein Passwort war dort noch gültig. Trotz unserer Warnungen hatte
+man dort nichts geändert. Als nächstes versuchte er's beim Naval Coastal Systems Command in Panama City, Florida. Aber
+er konnte nicht in sein altes Ingres−Konto rein. Sie hatten das Passwort seinetwegen geändert. Störte ihn nicht einen
+Augenblick. Er drehte sich um und loggte sich als Benutzer “<span class="tester">Ovca</span>” mit dem Passwort
+“<span class="tester">Baseball</span>” ein. Das funktionierte perfekt.</p>
+<p>Aha! Noch ein Beweis, dass er Passwörter knackte. Vor zwei Monaten hatte sich der Hacker als Ingres in diesen
+Marinecomputer eingeloggt und seine verschlüsselte Passwortdatei kopiert Und jetzt kann er sich immer noch einloggen,
+obwohl sie das IngresKonto gelöscht haben, weil er ein anderes Konto benutxt. Die Idioten hatten nur ein Passwort
+geändert. Und ihre Passwörter waren gewöhnliche englische Wörter.</p>
+<p>Du lieber Gott. Weil er schon dabei war, überprüfte er seine alten Schlupfwinkel. Air Force Base Ramstein. Fort
+Stewart. Universität Rochester. Die Optimis−Datenbank des Pentagon. Schließlich verließ er das Netzwerk. Heute war er
+bei Unisys in einen neuen Computer eingebrochen. Wo hatte er diesen Namen gehört? Natürlich − das ist ein
+Rüstungsbetrieb, der Computer für das Militär herstellt. Nicht irgendwelche Computer. Unisys baut sichere
+Computer−Systeme, in die man nicht einbrechen kann. Genau.</p>
+<p>Moment mal. Welche anderen Rüstungsbetriebe waren noch betroffen ? Ich kritzelte eine Liste auf ein Stück Papier.
+Unisys. Hersteller sicherer Computer. TRW. Die machten Militär− und Raumfahrtcomputer. SRI. Die haben Militärverträge
+über die Konstruktion von Computersicherungssystemen. Mitre... die entwickeln Hochsicherheitscomputer für das Militär.
+Das sind die Leute, die die sicheren Computer der NSA testen. BBN. Die haben das Milnet aufgebaut.</p>
+<p>Was stimmt nicht an diesem Bild? fragte ich mich. Das sind doch genau die Firmen, die sichere Systeme entwerfen,
+konstruieren und testen. Und trotzdem bummeln frank und frei Hacker durch ihre Computer. Diese Firmen haben auch nicht
+gerade Minibudgets Sie kassieren für die Entwicklung sicherer Software Milliarden Dollars von unserer Regierung. Kein
+Zweifel. Auch hier griff die alte Regel Die Kinder des Schuhmachers gehen barfuß.</p>
+<p>Ich hatte gesehen, wie dieser Kerl in Computer der Army der Navy und der Air Force, von Rüstungsbetrieben,
+Universitäten und Labors einbrach. Nicht aber, in Banken. Oh, ich wusste warum. Deren Netzwerke sind nicht so allgemein
+zugänglich wie das Arpanet. Aber ich wette, wenn er in ihre Netzwerke reinkäme, wäre er genauso erfolgreich.</p>
+<p>Man muss wirklich nicht genial oder ein Experte sein, um in Computer einzubrechen. Nur geduldig. Was diesem Hacker
+an Originalität fehlte, glich er durch Zähigkeit aus. Einige Löcher, die er ausnutzte, waren mir neu: das
+Gnu−Emcas−Problem zum Beispiel. Aber meist profitierte er von Fehlern der Systemverwalter, wie zum Beispiel Konten
+durch naheliegende Passwörter “<span class="tester">geschützt</span>” lassen, sich Passwörter per elektronischer Post
+zuschicken oder Buchungskontrollen nicht überwachen.</p>
+<p>Wenn man das bedachte, war es dann nicht idiotisch, die Anlage offenzulassen? Das ging schon zehn Monate so, und er
+war immer noch frei. Trotz seiner Einbrüche in mehr als 30 Computer, trotz des Briefs von Laszlo aus Pittsburgh, trotz
+all der Telefonverfolgungen war dieser Hacker immer noch auf freiem Fuß. Wie lange sollte das noch so weitergehen?</p>
+
+</div>
+</body>
+</html>
+

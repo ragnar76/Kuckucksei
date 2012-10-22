@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="de"><head>
+<title>Clifford Stoll - Das Kuckucksei : Titel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="chapter">
+
+<p class="heading">47. Kapitel</p>
+<p>Den März über und Anfang April hatte sich der Hacker fast verzogen. Er tauchte gelegentlich auf, gerade so lange,
+dass seine Konten auf der Liste der aktiven blieben. Aber er schien sichtlich desinteressiert, in andere Computer zu
+gelangen, und nahm meine neuen SDINET−Dateien überhaupt nicht zur Kenntnis. Was war los mit ihm? Wenn er verhaftet
+wäre, würde er hier nicht auftauchen, überlegte ich. Und wenn er sich mit anderen Projekten besch äftigt, warum taucht
+er dann für eine Minute auf und verschwindet dann wieder?</p>
+<p>Am 14. April 1987 arbeitete ich gerade am Unix−System, als ich bemerkte, dass sich Marv Atchley einloggte. Komisch.
+Marv ist doch oben, grübelte ich, und hält ein paar Programmierern eine Standpauke. Ich lief rüber zu seiner Kiste und
+schaute mir sein Terminal an. Nicht mal eingeschaltet. Wer benutzte Marvs Konto? Ich rannte rüber zum Schaltraum und
+sah jemanden durch unseren Tymnet Anschluss reinkommen. Er war als Marv Atchley in unser System eingeklinkt. Ich rief
+Tymnet an − Steve verfolgte die Leitung rasch. " Das kommt von Hannover. Sind Sie sicher, dass es nicht der Hacker ist?
+" " Schwer zu sagen. Ich ruf Sie gleich wieder an. " Ich rannte vier Treppen hoch und spähte in den Konferenzraum. Ja,
+da war Marv Atchley und hielt einen engagierten Vortrag vor 25 Programmierern.</p>
+<p>Als ich in den Schaltraum zurückkam, war der Pseudo−Marv weg. Aber ich konnte sehen, dass er ohne jeden Trick ins
+System gekommen war. Sonst hätte er meinen Alarm ausgelöst. Wer's auch war, er musste Marvs Passwort kennen.</p>
+<p>Nach Ende der Besprechung zeigte ich Marv den Ausdruck. " Der Teufel soll mich holen, wenn ich weiß, wer das ist.
+Ich bestimmt mein Passwort nie jemandem gesagt. " " Wann hast du's zum letzten Mal geändert?" " Oh, vor ein paar
+Wochen. " " Und was ist dein Passwort? " " “<span class="tester">Messias</span>”. Ich werde es gleich ändern. " Woher,
+zum Teufel, hatte dieser Hacker Marvs Passwort? Ich hätte es doch merken müssen, wenn er ein trojanisches Pferd
+abgesetzt hätte. Konnte er “<span class="tester">Messias</span>” erraten haben? Oja. Es gibt dafür einen Weg.</p>
+<p>Unsere Passwörter sind chiffriert gespeichert. Man kann den ganzen Computer durchsuchen und findet das Wort
+“<span class="tester">Messias</span>” nie. Man findet es verschlüsselt als “<span class="tester">p3kqznqiewe</span>”.
+Unsere Passwortdatei war randvoll mit solchem chiffrierten Buchstabensalat. Und es gibt keine Möglichkeit, die
+Salatköpfe aus diesem Gemenge zu rekonstruierten.</p>
+<p>Aber man kann Passwörter raten. Nehmen wir an, der Hacker versuchte, sich als Marv einzuloggen, dann versuchte er
+das Passwort “<span class="tester">Aardvark</span>”. Mein System sagt “<span class="tester">nix gut</span>”. Der Hacker
+ist hartnäckig und versucht es wieder, diesmal mit dem Passwort “<span class="tester">Aaron</span>”. Wieder kein Glück.
+Er versucht, sich nacheinander mit Passwörtern einzuloggen, die er in einem Wörterbuch nachschlägt. Schließlich
+probiert er das Passwort “<span class="tester">Messias</span>” aus. Die Tür öffnet sich weit. Jeder Versuch dauert ein
+paar Sekunden. Die Finger des Hackers würden wund, bevor er das ganze Wörterbuch durch hätte. Diese Brachialmethode
+beim Passwortraten funktioniert jedoch nur bei einem total schlecht verwalteten Computer.</p>
+<p>Aber ich hatte gesehen, wie dieser Hacker unsere Passwortdatei in seinen eigenen Rechner kopierte. Wozu konnte er
+aber eine Liste unserer chiffrierten Passwörter gebrauchen? Das Passwortchriffrierverfahren von Unix verwendet ein
+Verschl üsselungsprogramm, das öffentlich ist. Jeder kann eine Kopie davon kriegen − es hängt an Schwarzen Brettern.
+Bei hunderttausend Unix−Computern in der Welt könnte man das Programm auch gar nicht geheimhalten.</p>
+<p>Das Verschlüsselungsprogramm von Unix funktioniert nur in einer Richtung: Es chiffriert englischen Text zu
+Buchstabensalat. Man kann den Prozess nicht umdrehen und chiffrierte Passwörter ins Englische zurückübersetzen.</p>
+<p>Aber mit diesem Verschlüsselungsprogramm kann man jedes Wort aus dem Wörterbuch chiffrieren. Man macht eine Liste
+chiffrierter englischer Wörter aus dem Wörterbuch. Danach ist es ganz einfach, das, was in meiner Passwortdatei steht,
+mit der Liste chiffrierter Passwörter zu vergleichen. Auf diese Weise musste der Hacker Passwörter knacken.</p>
+<p>Auf seinem Computer in Hannover ließ er das Passwortchiffrierprogramm von Unix laufen. Er fütterte es mit dem ganzen
+Wörterbuch, und sein Programm verschlüsselte nacheinander alle Wörter der englischen Sprache. Etwa so: “<span class=
+"tester">Aardvark</span>” wird zu “<span class="tester">vi4zkcv1sfz</span>” chiffriert. Ist es dasselbe wie
+“<span class="tester">p3kqznqiewe</span>”? Nein, also geh zum nächsten Wort im Wörterbuch. “<span class=
+"tester">Aaron</span>” wird zu “<span class="tester">zzo1e9ck1g8</span>” verschlüsselt. Nicht dasselbe wie
+“<span class="tester">p3kqznqiewe</span>”, also geh zum nächsten Wort im Wörterbuch. Schließlich würde sein Programm
+entdecken, dass “<span class="tester">Messias</span>” zu “<span class="tester">p3kqznqiewe</span>” verschlüsselt wird.
+Wenn sein Programm ein passendes Wort gefunden hatte, Bingo!, dann druckte es das aus. Mein Hacker knackte Passwörter,
+indem er ein Wörterbuch benutzte. Er konnte jedes Passwort herausfinden, vorausgesetzt, es war ein englisches Wort.</p>
+<p>Eine ernste Sache. Es bedeutete, dass er jetzt in der Lage war, die Passwörter legitimer Benutzer aus allen
+Passwortdateien herauszufinde , die ich ihn hatte kopieren sehen. Das verhieß nichts Gutes. Ich ging mein Tagebuch
+durch. Er hatte diese Dateien aus unserem Unix−Computer, dem System von Anniston und dem Naval Coastal Systems Command
+kopiert. Ich fragte mich, ob er in diese Computer zurückkommen würde.</p>
+<p>Heh − ich hatte bewiesen, dass er mit seinem Rechner Passwörter knackte. In einem englischen Wörterbuch stehen etwa
+100 000 Wörter. Es war ungefähr drei Wochen her, dass er meine Passwortdatei kopiert hatte. Wenn dieser Passwortknacker
+seit drei Wochen andauernd gelaufen war, konnte er dann Marvs Passwort beraten haben? Auf einer normalen VAX dauert's
+etwa eine Sekunde, ein Passwort zu chiffrieren. 100000 Wörter würden dann also rund einen Tag erfordern. Auf einem
+IBM−PC vielleicht einen Monat. Ein Cray−Supercomputer vielleicht eine Stunde.<br></p>
+<p>Aber Marv zufolge hatte dieser Typ es in weniger als drei Wochen geschafft. Also benutzte er keinen kleinen
+Heimcomputer. Er musste den Passwortknacker auf einer VAX oder einer Sun−Workstation laufen lassen. Trotzdem musste ich
+mit dieser Schlussfolgerung vorsichtig sein. Er verwendete vielleicht einen schnelleren Algorithmus oder hatte ein paar
+Tage gewartet, nachdem er Marvs Passwort geknackt hatte. Trotzdem klopfte ich mir selbst auf die Schulter. Nur weil ich
+gemerkt hatte, dass er Passwörter knackte, kannte ich den Rechnertyp, den er benutzte. Detektivarbeit mit
+Fernbedienung.</p>
+<p>Das erklärte, warum er immer unsere Passwortdateien in sein SJ”− stem kopierte Er knackte unsere Passwörter in
+Deutschland. Schon ein erratenes Passwort war gefährlich. Wenn ich jetzt Sventeks Konto löschte, konnte er in das Konto
+von jemand anderem schlüpfen. Wie gut, dass ich die Tür für ihn nicht zugemacht hatte. Was ich für kugelsicher gehalten
+hatte − meine Passwörter −, erwies sich als löcherig wie ein Schweizer Käse. Passwortknacken. War mir wirklich noch
+nicht begegnet, aber ich denke, den Experten bestimmt. Was sagten also die dazu?<br></p>
+<p>Ich rief Bob Morris an, das hohe Tier, dem ich bei der NSA begegnet war. Er hatte das Passwortchiffriersystem von
+Unix erfunden. " Ich glaube, der Hacker knackt meine Passwörter " , teilte ich Bob mit. " Was? " Bob klang
+interessiert." Benutzt er ein Wörterbuch, oder hat er wirklich den Algorithmus der Datenverschlüsselung umgedreht ? " "
+Ein Wörterbuch, glaube ich. " " Ist ja'n Ding! Ich selbst habe drei gute Programme zum Passwortknacken. Eins davon
+macht eine Vorberechnung der Passwörter, deswegen läuft es ein paar hundertmal schneller. Wollen Sie eine Kopie? "</p>
+<p>Ich traute meinen Ohren kaum. Bot er mir doch tatsächlich eine Kopie eines Passwortknackprogramms an! " Äh, nein,
+ich glaube nicht " , sagte ich. " Aber wenn ich jemals Passwörter dechiffrieren muss, rufe ich Sie an. Sagen Sie, seit
+wann kann man Passwörter knacken? " " Auf so'ne Weise, mit roher Gewalt? Ach, vielleicht seit fünf oder zehn Jahren.
+Ist ein Kinderspiel. " Passwörter knacken ein Spiel? Was war das für ein Typ? Bob fuhr fort:" Raten funktioniert nicht,
+wenn man gute Passwörter wählt. Unsere eigentliche Sorge sind die Chiffrierprogramme. Wenn jemand einen Weg findet,
+diese Software umzudrehen, dann sit?en wir bös in der Patsche. "</p>
+<p>Ich verstand jetzt, was er meinte. Das Programm, das “<span class="tester">Messias</span>” in “<span class=
+"tester">p3kqznqiewe</span>” übersetzte, ist wie eine Einbahnstraße. Es braucht nur eine Sekunde, um ein Passwort zu
+verschlüsseln. Aber wenn jemand einen Weg fände, diese Wurstmaschine rückwärts laufen zu lassen − einen Weg, um
+“<span class="tester">p3kqznqiewe</span>” in “<span class="tester">Messias</span>” umzuwandeln −, könnte er jedes
+Passwort herausfinden, ohne zu raten. Nun, ich hatte es wenigstens der NSA gesagt. Es mochte ja sein, dass sie diese
+Techniken schon seit Jahren kannten, aber jetzt u−ußten sie offiziell, dass jemand anderes sie anwandte. Würden sie das
+öffentlich machen? Das muss man sich mal vorstellen, wenn die NSA das seit zehn Jahren wusste, warum hatten sie's nicht
+srhon längst allgemein bekanntgegeben?</p>
+Systemkonstrukteure mussten über dieses Problem Bescheid wissen − um bessere Betriebssysteme zu entwickeln. Auch
+Systemverwalter sollten das wissen. Und jeder, der ein Passwort benutzt, sollte gewarnt werden. Die Regel ist einfach:
+Nimm keine Passwörter, die in einem Wörterbuch stehen. Warum hatte mir das niemand gesagt?
+<p>Das National Computer Security Center schien sich nicht für die wirklichen, alltäglichen Probleme Tausender von
+Unix−Computern draußen im Lande zu interessieren. Ich aber wollte über Schwächen meines Unix−Systems Bescheid wissen.
+Welche Probleme waren berichtet worden? Ich hatte schon einen Fehler im Gnu−Emacs−Editor entdeckt − ein
+weitverbreitetes Sicherheitsloch. Ich meldete es pflichtbewußt dem National Computer Security Center. Aber dort hatte
+man's nicht weitergegeben. Und jetzt hatte ich entdeckt, dass Passwörter, die in Wörterbüchern stehen, nicht sicher
+sind.</p>
+<p>Wie viele Sicherheitslöcher gab's noch in meinem System? Das NCSC wusste es vielleicht, aber es sagte nichts. Das
+Motto der NSA “<span class="tester">Schweigen ist Gold</span>” schien allgemeine Richtschnur zu werden. Doch gerade
+weil man über diese Sicherheitsprobleme von Computern Stillschweigen hält, treffen sie uns alle. Ich konnte sehen, dass
+der Hacker diese Löcher schon lange entdeckt und ausgenutzt hatte. Warum sagte das den guten Leuten niemand? " Dafür
+sind wir nicht zuständig " , erklärte Bob Morris, als ich ihn darauf ansprach. " Wir sammeln diese Information, um
+zukünftige Computer um so besser zu konstrvieren. " Irgendwo, irgendwie stimmte hier irgendwas nicht. Die Typen mit den
+schmutzigen Westen kannten die Kombinationen zu unseren Tresoren. Aber die mit den weißen Westen schwiegen. Also
+vergessen wir die NSA fürs erste. Was konnte ich noch tun? Zeit, den anderen Behörden die Sporen zu geben. Ende April
+'87 hatte die Deutsche Bundespost immer noch nicht die entsprechenden Papiere von den USA erhalten. Ihre
+Fangschaltungen gründeten sich auf eine Strafanzeige, die die Universität Bremen erstattet hatte.</p>
+<p>Aber obwohl die Bundespost die Spur mehrmals zurückverfolgt hatte, konnte sie mir Name oder Telefonnummer des
+Verdächtigen nicht mitteilen. Das deutsche Datenschutzgesetz verbot das. Klang bekannt. Kurzum, ich überlegte, ob meine
+Schwester Jeannie wohl bereit wäre, in Hannover rumzuschnüffeln. Bis jetzt war sie die einsatzfreudigste Ermittlerin
+gewesen. Ich telefonierte mit Mike Gibbons. " Wir behandeln das nicht mehr als Kriminalfall " , sagte er. " Warum
+aufgeben, wenn die Deutschen die Leitung verfolgt haben und den Namen des Verdächtigen wissen? " " Ich habe nicht
+gesagt, dass wir aufgeben. Ich habe nur gesagt, dass das FBI das nicht als Kriminalfall behandelt. " Was bedeutete das?
+Leider ließ Mike wie üblich den Rolladen runter, wenn ich Fragen stellte. Hatte die Arbeit der Air Force Fortschritte
+gemacht? Dort machte man unter der Hand bekannt, dass “<span class="tester">Reptilien</span>” durch das Milnet krochen
+und versuchten, in Militärcomputer einzubrechen. Und eine Stelle nach der anderen verschärfte die
+Sicherheitsmaßnahmen.</p>
+<p>Aber die Air Force verließ sich auf das FBI, dass es den Hacker schon fangen würde. Ann Funk und Jim Christy hätten
+mir gerne weitergeholfen, wie sie mir am Telefon versicherten. " Sie könne mir alles erzählen, nur nicht: “<span class=
+"tester">Dafür bin ich nicht zuständig "</span> ”, bat ich sie. " Okay " , erwiderte Ann." Das steht nicht in meiner
+Macht. "</p>
+
+</div>
+</body>
+</html>
+
