@@ -15,7 +15,7 @@
 		<navLabel>
 		<text xmlns:ns="http://www.daisy.org/z3986/2005/ncx/">Cover</text>
 		</navLabel>
-		<content src="cover.html"/>
+		<content src="chapter/kuckucksei_cover.html"/>
 	</navPoint>
     <navPoint id="navpoint-2" playOrder="2">
       <navLabel>
