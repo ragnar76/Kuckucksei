@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+<head>
+<meta name="dtb:uid" content="content"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle>
+	<text>The Alphabet of Animals</text>
+</docTitle>
+<navMap>	
+	<navPoint id="navpoint-1" playOrder="1">
+		<navLabel>
+		<text xmlns:ns="http://www.daisy.org/z3986/2005/ncx/">Cover</text>
+		</navLabel>
+		<content src="cover.html"/>
+	</navPoint>
+    <navPoint id="navpoint-2" playOrder="2">
+      <navLabel>
+        <text xmlns:ns="http://www.daisy.org/z3986/2005/ncx/">Clifford Stoll - Das Kuckucksei</text>
+      </navLabel>
+<content src="chapter/kuckucksei_kapitel_001.html"/>
+<content src="chapter/kuckucksei_kapitel_002.html"/>
+<content src="chapter/kuckucksei_kapitel_003.html"/>
+<content src="chapter/kuckucksei_kapitel_004.html"/>
+<content src="chapter/kuckucksei_kapitel_005.html"/>
+<content src="chapter/kuckucksei_kapitel_006.html"/>
+<content src="chapter/kuckucksei_kapitel_007.html"/>
+<content src="chapter/kuckucksei_kapitel_008.html"/>
+<content src="chapter/kuckucksei_kapitel_009.html"/>
+<content src="chapter/kuckucksei_kapitel_010.html"/>
+
+<content src="chapter/kuckucksei_kapitel_011.html"/>
+<content src="chapter/kuckucksei_kapitel_012.html"/>
+<content src="chapter/kuckucksei_kapitel_013.html"/>
+<content src="chapter/kuckucksei_kapitel_014.html"/>
+<content src="chapter/kuckucksei_kapitel_015.html"/>
+<content src="chapter/kuckucksei_kapitel_016.html"/>
+<content src="chapter/kuckucksei_kapitel_017.html"/>
+<content src="chapter/kuckucksei_kapitel_018.html"/>
+<content src="chapter/kuckucksei_kapitel_019.html"/>
+<content src="chapter/kuckucksei_kapitel_020.html"/>
+
+<content src="chapter/kuckucksei_kapitel_021.html"/>
+<content src="chapter/kuckucksei_kapitel_022.html"/>
+<content src="chapter/kuckucksei_kapitel_023.html"/>
+<content src="chapter/kuckucksei_kapitel_024.html"/>
+<content src="chapter/kuckucksei_kapitel_025.html"/>
+<content src="chapter/kuckucksei_kapitel_026.html"/>
+<content src="chapter/kuckucksei_kapitel_027.html"/>
+<content src="chapter/kuckucksei_kapitel_028.html"/>
+<content src="chapter/kuckucksei_kapitel_029.html"/>
+<content src="chapter/kuckucksei_kapitel_030.html"/>
+
+<content src="chapter/kuckucksei_kapitel_031.html"/>
+<content src="chapter/kuckucksei_kapitel_032.html"/>
+<content src="chapter/kuckucksei_kapitel_033.html"/>
+<content src="chapter/kuckucksei_kapitel_034.html"/>
+<content src="chapter/kuckucksei_kapitel_035.html"/>
+<content src="chapter/kuckucksei_kapitel_036.html"/>
+<content src="chapter/kuckucksei_kapitel_037.html"/>
+<content src="chapter/kuckucksei_kapitel_038.html"/>
+<content src="chapter/kuckucksei_kapitel_039.html"/>
+<content src="chapter/kuckucksei_kapitel_040.html"/>
+
+<content src="chapter/kuckucksei_kapitel_041.html"/>
+<content src="chapter/kuckucksei_kapitel_042.html"/>
+<content src="chapter/kuckucksei_kapitel_043.html"/>
+<content src="chapter/kuckucksei_kapitel_044.html"/>
+<content src="chapter/kuckucksei_kapitel_045.html"/>
+<content src="chapter/kuckucksei_kapitel_046.html"/>
+<content src="chapter/kuckucksei_kapitel_047.html"/>
+<content src="chapter/kuckucksei_kapitel_048.html"/>
+<content src="chapter/kuckucksei_kapitel_049.html"/>
+<content src="chapter/kuckucksei_kapitel_050.html"/>
+
+<content src="chapter/kuckucksei_kapitel_051.html"/>
+<content src="chapter/kuckucksei_kapitel_052.html"/>
+<content src="chapter/kuckucksei_kapitel_053.html"/>
+<content src="chapter/kuckucksei_kapitel_054.html"/>
+<content src="chapter/kuckucksei_kapitel_055.html"/>
+<content src="chapter/kuckucksei_kapitel_056.html"/>
+
+<item href="chapter/kuckucksei_epilog.html"/>
+<item href="chapter/kuckucksei_dank.html"/>
+</navPoint>
+</navMap>
+</ncx>
