@@ -98,7 +98,9 @@ faul. ka, gut, dachte ich, wenn du schon wach bist, kannst du auch gleich nachse
 Vielleicht wartet elektronische Post auf mich. Ich meldete mich über Tymnet beim Lawrence−Berkeley−Labor an − keine
 Ferngespräche für mich Das Unix−System in Berkeley war auch langsam. Frustrierend langsam. Aber nur ein anderer
 benutzte es. Darren Griffiths Über den Bildschirm tauschten wir ein paar Meldungen aus:</p>
-<p class="teletype">Hi Darren −− It's Cliff How's things :−) Call me on the phone right away. We're under attack. OK
+<p class="teletype">Hi Darren −− It's Cliff How's things :−)<br>
+Call me on the phone right away. We're under attack.<br>
+OK
 O−O</p>
 <p>O−O bedeutet Over und Out. Und das :−) ist ein etwas grober Smiley Man muss ihn von der rechten Seite anschauen dann
 lächelt er. 2. 15 Uhr in Massachusetts ist nicht ganz Mitternacht in Berkeley. Darren war nicht im geringsten am
@@ -141,10 +143,17 @@ und setzen dem, was man manipulieren kann, Grenzen. Zusätzlich kann man Systemp
 IBM−PC läuft, funktioniert nicht auf meinem Macintosh oder auf dem Unix−System meines Labors. Und dann darf das
 Virusprogramm nicht viel Speicherplatz brauchen, sonst wird es leicht entdeckt und gekillt. Ein Virus eignet sich gut
 dafür, Zeitbomben zu verstecken. Es ist ganz leicht, einen Virus zu konstruieren, dessen Instruktionen folgendermaßen
-funktionieren: “<span class="tester">Kopiere mich in vier andere Programme.</span>” “<span class="tester">Warte bis zum
-13. Februar. Lösche alle Dateien im System.</span>” Der Virus muss einen Verbreitungsweg finden. Bloß Programme auf
+funktionieren:<br>
+</p>
+<p>“<span class="tester">Kopiere mich in vier andere Programme.</span>”<br>
+“<span class="tester">Warte bis zum
+13. Februar.</span>”<br>
+“<span class="tester">Lösche alle Dateien im System.</span>”<br>
+</p>
+<p>Der Virus muss einen Verbreitungsweg finden. Bloß Programme auf
 einem Computer zu infizieren, schadet nur einer Person. Der Schöpfer eines bösartigen Virus will aber, dass der Virus
 Hunderte von Systemen infiziert. Wie gibt man ein Programm an Hunderte andere weiter?</p>
+
 <p>Die Leute tauschen Software auf Platten und Disketten aus. Wenn man ein Programm auf einer Platte infiziert, dann
 wird jedes System angesteckt, das dieses Programm laufen lässt. So wie die Platte von Büro zu Büro geht, können
 Dutzende von Computern infiziert und möglicherweise leergefegt werden. Auch elektronische Schwarze Bretter vermitteln
@@ -204,8 +213,7 @@ ich. Er hat versucht zu verhindern, dass andere Programmierer seinen Code verste
 seine Verfolger langsamer zu machen. Zum Teufel.</p>
 <p>Zeit, Darren noch einmal anzurufen. Es war 5 Uhr, und wir verglichen unsere Notizen − er hatte dasselbe entdeckt −
 und noch mehr. " Ich habe einen Teil des Virus demaskiert " , erläuterte er," und kann sehen, wie er durch das
-Postsystem einbricht. Dann verbreitet es sich mit “<span class="tester">finger</span>” und “<span class=
-"tester">telnet</span>” in andere Computer. Es entschlüsselt Passwörter mit Brachialraten. " Zusammen fieselten wir das
+Postsystem einbricht. Dann verbreitet es sich mit “<span class="tester">finger</span>” und “<span class="tester">telnet</span>” in andere Computer. Es entschlüsselt Passwörter mit Brachialraten. " Zusammen fieselten wir das
 Programm am Telefon auseinander. Sein einziger Zweck war anscheinend, sich in andere Computer zu kopieren. Es suchte
 nach Netzwerkverbindungen − benachbarte Computer, entfernte Systeme, alles, was es erreichen konnte.</p>
 <p>Immer wenn das Virusprogramm einen Computer am Netzwerk entdeckt, versucht es einzubrechen und benutzt dabei mehrere
@@ -226,8 +234,7 @@ erteilen. Wenn ich eingeloggt bin, antwortet Unix mit meinem Namen, meiner Telef
 Übers Netzwerk funktioniert das prima; ich strecke häufig Zuerst meinen finger aus, bevor ich jemanden anrufe.</p>
 <p>Der Virus drang über das Programm ein, das finger−Anfragen bearbeitete. Der finger−Dämon hat Platz für 511 Zeichen;
 der Virus schickte 536 Zeichen. Was passierte mit den übrigen 14 Zeichen? Sie wurden als Unix−Befehle ausgeführt. Indem
-der Virus beim finger−Dämon einen Überlauf verursachte, fand er einen zweiten Weg, den Befehl “<span class=
-"tester">Führe das folgende Programm aus</span>” in einem fremden Computer auszuführen.</p>
+der Virus beim finger−Dämon einen Überlauf verursachte, fand er einen zweiten Weg, den Befehl “<span class="tester">Führe das folgende Programm aus</span>” in einem fremden Computer auszuführen.</p>
 <p>Wenn das nicht reichte, hatte der Virus einen eingebauten Passwortrater. Er versuchte, sich in benachbarte, bewährte
 Computer einzuloggen und benutzte ein paar Hundert verbreitete Passwörter. Wenn er ein gültiges Passwort erriet,
 kopierte er sich in den Computer und fing von vorne an. Puh! Jeder einzelne dieser Wege würde eine Menge Computer
@@ -290,8 +297,7 @@ wahrscheinlichste Urheber. Ich prüfe das nur nach. "</p>
 Computer geschickt. Ich war der erste, der sie angerufen hatte. Was für ein Wahnsinn! Dieser Anruf gab mir zu denken.
 Wer hatte den Virus geschrieben ? Warum? Man kann nicht zufällig einen Virus schreiben. Es musste Wochen gedauert
 haben, ihn zu konstrvieren. Der Virusschreiber hatte eine Liste von einigen hundert möglichen Passwörtern beigefügt,
-wie etwa “<span class="tester">cat</span>”, “<span class="tester">caynga</span>”, “<span class=
-"tester">celtics</span>”, “<span class="tester">cerulean</span>”, “<span class="tester">change</span>”... wie war er an
+wie etwa “<span class="tester">cat</span>”, “<span class="tester">caynga</span>”, “<span class="tester">celtics</span>”, “<span class="tester">cerulean</span>”, “<span class="tester">change</span>”... wie war er an
 eine solche Liste gekommen ? Hatte er sich vielleicht Passwörter von anderen Leuten geschnappt ? Oder seine
 Lieblingswörter genommen? Jedenfalls könnte in dieser Liste ein Schlüssel zu seiner Lokalisierung liegen. Der Virus
 selbst war ein weiterer Hinweis. Gute Programmierer schreiben sauberen Code. Lausige Programmierer schreiben lausigen
@@ -317,7 +323,8 @@ Betongebäude, das von alter viktorianischer Architektur umgeben ist.</p>
 Aber ich schau Maschine nach. " Sie tipe in ihr Terminal:</p>
 <p class="teletype">Finger Morris</p>
 <p>Ihr Computer antwortete:</p>
-<p class="teletype">Login name: rtm In real life: Robert T. Morris Phone: 617/498−2247<br>
+<p class="teletype">Login name: rtm In real life: Robert T. Morris<br>
+Phone: 617/498−2247<br>
 Last login Thu Nov 3 00:25 on ttyp2 from 128.84.254.126</p>
 <p>Hier hatten wir's ja: Das letzte Mal, dass Robert T. Morris den Harvard −Computer benutzt hat, war 25 Minuten nach
 Mitternacht gewesen, an dem Tag, als der Virus zu wirken begann. Aber er ist nicht hier in Massachusetts. Diese
@@ -455,6 +462,7 @@ konstrvieren. Die Stimme klingt aufgeregt. Ein Hacker sei in ihren Computer eing
 "</p>
 
 </div>
-</body>
-</html>
 
+
+
+</body></html>
