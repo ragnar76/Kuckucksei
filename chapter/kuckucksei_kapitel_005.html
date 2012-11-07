@@ -1,100 +1,84 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html lang="de"><head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="de">
+<head>
+<meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
 <title>Clifford Stoll - Das Kuckucksei : Kapitel 5</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="../style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
 <div class="chapter">
-
 <p class="heading">5. Kapitel</p>
-<p>Mit dem Montagmorgen begann meine zweite Woche in diesem Job. Mir war sehr ungemütlich: Ich war
-umgeben von überarbeiteten Spezialisten und wusste dennoch nicht, welche Aufgaben ich zu erfüllen hatte. Bis die Sache
-anfing Spaß zu machen, konnte ich diese Hackergeschichte bestimmt zu Ende bringen. Wie ein Erstsemester im Physiklabor
-schrieb ich in ein Tagebuch, was ich am Wochenende gemacht hatte. Nicht dass ich vorhatte, dieses Tagebuch zu benutzen:
-Es war nur eine Gelegenheit, das Textverarbeitungsprogramm meines Macintoshs kennenzulernen. Außerdem lautet die
-Faustregel des Astronomen: Was man nicht nieder schreibt, ist nicht passiert. Ich gab die Ergebnisse an den Rest der
-Mannschaft weiter und hoffte, niemand würde merken, dass ich im Schaltraum übernachtet hatte.</p>
-
-<p>Der Chef wollte mich sofort sprechen, als er eingetrudelt war. Ich befürchtete, er sei stinksauer,
-weil ich mir die ganzen Terminals ausgeborgt hatte. Der Führungsstil mochte ja locker sein, aber trotzdem durften auch
-Computercracks nicht Türme von Laborgeräten abbauen, ohne zu fragen. Aber Roy erwähnte die Terminals mit keinem Wort.
-Er wollte nur etwas über den Hacker wissen.</p>
-
-<p>" Wann ist er aufgetaucht? " " Sonntag morgen um 5 Uhr, drei Stunden lang. " " Irgendwelche Dateien
-kaputt? " " Hat ein Programm abgeschossen, von dem er dachte, es überwache ihn. " " Sind wir in Gefahr? " " Er ist
-privilegierter Benutzer. Er kann als Super−User unsere gesamten Dateien löschen. " " Können wir ihn abschießen? " "
-Wahrscheinlich. Wir kennen sein Loch, das stopfen wir schnell. " " Glauben Sie, das hält ihn auf? "</p>
-
-<p>Ich konnte spüren, wohin Roys Gedanken wiesen. Er wusste, dass wir das gestohlene Konto von Sventek
-leicht deaktivieren konnten. Und jetzt, wo wir kapiert hatten, was lief, war es nicht schwierig, das Gnu−Emacs−Loch zu
+<p>Mit dem Montagmorgen begann meine zweite Woche in diesem Job. Mir war sehr ungemütlich: Ich war umgeben von
+überarbeiteten Spezialisten und wusste dennoch nicht, welche Aufgaben ich zu erfüllen hatte. Bis die Sache anfing Spaß
+zu machen, konnte ich diese Hackergeschichte bestimmt zu Ende bringen. Wie ein Erstsemester im Physiklabor schrieb ich
+in ein Tagebuch, was ich am Wochenende gemacht hatte. Nicht dass ich vorhatte, dieses Tagebuch zu benutzen: Es war nur
+eine Gelegenheit, das Textverarbeitungsprogramm meines Macintoshs kennenzulernen. Außerdem lautet die Faustregel des
+Astronomen: Was man nicht nieder schreibt, ist nicht passiert. Ich gab die Ergebnisse an den Rest der Mannschaft weiter
+und hoffte, niemand würde merken, dass ich im Schaltraum übernachtet hatte.</p>
+<p>Der Chef wollte mich sofort sprechen, als er eingetrudelt war. Ich befürchtete, er sei stinksauer, weil ich mir die
+ganzen Terminals ausgeborgt hatte. Der Führungsstil mochte ja locker sein, aber trotzdem durften auch Computercracks
+nicht Türme von Laborgeräten abbauen, ohne zu fragen. Aber Roy erwähnte die Terminals mit keinem Wort. Er wollte nur
+etwas über den Hacker wissen.</p>
+<p>" Wann ist er aufgetaucht? " " Sonntag morgen um 5 Uhr, drei Stunden lang. " " Irgendwelche Dateien kaputt? " " Hat
+ein Programm abgeschossen, von dem er dachte, es überwache ihn. " " Sind wir in Gefahr? " " Er ist privilegierter
+Benutzer. Er kann als Super−User unsere gesamten Dateien löschen. " " Können wir ihn abschießen? " " Wahrscheinlich.
+Wir kennen sein Loch, das stopfen wir schnell. " " Glauben Sie, das hält ihn auf? "</p>
+<p>Ich konnte spüren, wohin Roys Gedanken wiesen. Er wusste, dass wir das gestohlene Konto von Sventek leicht
+deaktivieren konnten. Und jetzt, wo wir kapiert hatten, was lief, war es nicht schwierig, das Gnu−Emacs−Loch zu
 stopfen: Wir mussten nur ein paar Codezeilen hinzufügen, um das angepeilte Dateienverzeichnis zu prüfen.</p>
-
-<p>Die entscheidende Frage lautete aber: Sollten wir unsere Türen offenlassen oder nicht? Den Laden
-dichtzumachen war die naheliegendste Reaktion. Wir wussten, wie dieser Hacker in unser System eingedrungen war, und
-wussten, wie wir ihn rausschmeißen konnten. Aber was stimmte außerdem nicht? Welche anderen Geschenke hatte uns unser
-mysteriöser Besucher hinterlassen? Zu wie vielen Konten hatte er sich noch Zugang verschafft? In welche anderen
-Computer war er eingebrochen? Das war Roys Sorge. Der Ausdruck zeigte, dass der Hacker ein kompetenter
-Systemprogrammierer war, der versteckte Fehler ausbeuten konnte, die wir noch nicht einmal bemerkt hatten. Was hatte er
-bereits getan?</p>
-
-<p>Als privilegierter Benutzer kann man jede Datei im System modifizieren. Hatte der Hacker ein
-Systemprogramm geändert, um sich eine Hintertür zu öffnen? Hatte er an unserem System herumgeschustert, dass es ein
-Zauberpasswort anerkannte? Hatte er einen Computervirus eingesetzt? In Heimcomputern verbreiten sich Viren, indem sie
-sich selbst in andere Softwareteile kopieren. Wenn man jemand anderem infizierte Software gibt, kopiert sich der Virus
-in dessen Software und verbreitet sich so von Platte zu Platte.</p>
-
-<p>Wenn der Virus gutartig ist, ist er schwer zu entdecken und richtet wahrscheinlich keinen großen
-Schaden an. Aber es ist einfach, bösartige Viren zu konstrvieren, die sich reduplizieren und dann Dateien löschen.
-Genauso leicht ist es, einen Virus zu schaffen, der monatelang inaktiv ist und dann irgendwann in der Zukunft
-ausbricht. Viren sind die Geschöpfe, die Programmierer in ihren Alpträumen verfolgen. Als privilegierter Benutzer
-konnte der Hacker unser System in einer Weise infiziert haben, dass es fast unmöglich war, seinen Virus auszurotten. Er
-konnte sich in die Systemsoftware kopieren und in dunklen Ecken des Computers verstecken. Indem er sich von Programm zu
-Programm kopierte, würde er all unsere Versuche, ihn zu löschen, vereiteln.</p>
-
-<p>Anders als bei einem PC, bei dem man das Betriebssystem von der Programmdiskette neu laden kann,
-hatten wir unser Betriebssystem weitreichend modifiziert. Wir konnten nicht zu einem Hersteller gehen und sagen: "
-Geben Sie uns bitte eine Originalkopie. " Wenn das System infiziert war, konnten wir es nur mit Sicherheitskopiebändern
-wieder restaurieren. Wenn der Hacker den Virus aber bereits vor sechs Monaten eingepflanzt hatte, waren diese Bänder
-auch infiziert. Vielleicht hatte er eine logische Bombe gelegt − ein Programm, das zu einem bestimmten Zeitpunkt in der
+<p>Die entscheidende Frage lautete aber: Sollten wir unsere Türen offenlassen oder nicht? Den Laden dichtzumachen war
+die naheliegendste Reaktion. Wir wussten, wie dieser Hacker in unser System eingedrungen war, und wussten, wie wir ihn
+rausschmeißen konnten. Aber was stimmte außerdem nicht? Welche anderen Geschenke hatte uns unser mysteriöser Besucher
+hinterlassen? Zu wie vielen Konten hatte er sich noch Zugang verschafft? In welche anderen Computer war er
+eingebrochen? Das war Roys Sorge. Der Ausdruck zeigte, dass der Hacker ein kompetenter Systemprogrammierer war, der
+versteckte Fehler ausbeuten konnte, die wir noch nicht einmal bemerkt hatten. Was hatte er bereits getan?</p>
+<p>Als privilegierter Benutzer kann man jede Datei im System modifizieren. Hatte der Hacker ein Systemprogramm
+geändert, um sich eine Hintertür zu öffnen? Hatte er an unserem System herumgeschustert, dass es ein Zauberpasswort
+anerkannte? Hatte er einen Computervirus eingesetzt? In Heimcomputern verbreiten sich Viren, indem sie sich selbst in
+andere Softwareteile kopieren. Wenn man jemand anderem infizierte Software gibt, kopiert sich der Virus in dessen
+Software und verbreitet sich so von Platte zu Platte.</p>
+<p>Wenn der Virus gutartig ist, ist er schwer zu entdecken und richtet wahrscheinlich keinen großen Schaden an. Aber es
+ist einfach, bösartige Viren zu konstrvieren, die sich reduplizieren und dann Dateien löschen. Genauso leicht ist es,
+einen Virus zu schaffen, der monatelang inaktiv ist und dann irgendwann in der Zukunft ausbricht. Viren sind die
+Geschöpfe, die Programmierer in ihren Alpträumen verfolgen. Als privilegierter Benutzer konnte der Hacker unser System
+in einer Weise infiziert haben, dass es fast unmöglich war, seinen Virus auszurotten. Er konnte sich in die
+Systemsoftware kopieren und in dunklen Ecken des Computers verstecken. Indem er sich von Programm zu Programm kopierte,
+würde er all unsere Versuche, ihn zu löschen, vereiteln.</p>
+<p>Anders als bei einem PC, bei dem man das Betriebssystem von der Programmdiskette neu laden kann, hatten wir unser
+Betriebssystem weitreichend modifiziert. Wir konnten nicht zu einem Hersteller gehen und sagen: " Geben Sie uns bitte
+eine Originalkopie. " Wenn das System infiziert war, konnten wir es nur mit Sicherheitskopiebändern wieder
+restaurieren. Wenn der Hacker den Virus aber bereits vor sechs Monaten eingepflanzt hatte, waren diese Bänder auch
+infiziert. Vielleicht hatte er eine logische Bombe gelegt − ein Programm, das zu einem bestimmten Zeitpunkt in der
 Zukunft hochgeht. Aber vielleicht hatte dieser Eindringling auch nur unsere Dateien geplündert, ein paar Jobs gekillt
 und unsere Abrechnung versaut... Wie konnten wir wissen, dass er nicht etwas viel Schlimmeres getan und an unseren
 Datenbanken herumgepfuscht hatte? Konnten wir unseren Programmen und Daten jemals wieder vertrauen ? Wir konnten es
 nicht. Und zu versuchen, ihn auszusperren, würde kaum funktionieren, weil er dann nur einen anderen Weg suchen
 würde.</p>
-
-<p>Wir mussten herausfinden, was er schon getan hatte und was er noch tat! Vor allem mussten wir
-wissen, wer am anderen Ende der Leitung saß. " Es muss irgendein Student aus Berkeley sein " , sagte ich zu Roy, " das
-sind die Unix−Cracks, und uns halten sie für Blödmänner. " " Ich wäre da nicht so sicher. " Roy lehnte sich in seinem
-Sessel zurück. " Warum sollte jemand aus Berkeley durch Tymnet reinkommen, wenn er unser System doch viel einfacher
-über die Telefonleitungen anwählen könnte? " " Vielleicht ist Tymnet nur ein Deckmantel ", erwiderte ich, " ein
-Versteck. Wenn er das Labor direkt anwählen würde, könnten wir ihn verfolgen. Aber so müssen wir sowohl Tymnet als auch
-einen Telefonanruf verfolgen. "</p>
-
-<p>Mein Abwinken überzeugte den Chef nicht. Ob aus wissenschaftlicher Erfahrung oder aus zynischem
-Prinzip − Roy legte sich nicht fest: Es war so lange kein Student, bis man einen in sein Büro schleifte. Sicher, die
-Ausdrucke vom Wochenende zeigten einen guten Programmierer, aber es war auch möglich, dass wir irgendeinen kompetenten
-Computercrack von irgendwo beobachteten. Den Kerl zu verfolgen bedeutete, Telefonleitungen zu verfolgen.</p>
-
-<p>Der Preis für harte Beweise war harte Arbeit. Konfrontiert mit den Spuren eines mysteriösen
-Besuchers, sah Roy nur Fußabdrücke. Ich sah einen Eindringling. Roy entschied sich dafür, sich nicht zu entscheiden. "
-Stellen wir für heute alle Netzwerkverbindungen ein. Morgen früh werde ich mit dem Labordirektor reden und überlegen,
-was wir tun. "</p>
-
-<p>Wir konnten noch zuwarten, aber früher oder später mussten wir mit dem Verfolgen anfangen oder den
-Typ aussperren. Ich fragte mich, ob ich Lust hatte, jemanden zu verfolgen? Es würde mich von der wissenschaftlichen
-Arbeit abhalten, denri es hatte nichts zu tun mit Astronomie oder Physik. Und es roch so nach Räuber−und−Gendarm− oder
-Versteckspiel. Andererseits würde ich vielleicht etwas über Telefonverfolgungen und Netzwerke erfahren. Und das Beste
-war die Vorstellung, wie so ein Hacker aus der Wäsche gucken würde, wenn wir in seine Bude platzen und schreien würden:
-" Halt! Keine Bewegung ! Finger von der Tastatur! "</p>
-
-<p>Am Dienstagnachmittag rief Roy an. " Der Direktor sagt, das sei elektronischer Terrorismus. Nutzt
-alle Mittel, die ihr habt, um den Kerl zu fangen. Nehmt euch so viel Zeit, wie ihr braucht. Drei Wochen, wenn's sein
-muss. Aber nagelt den Burschen fest! " Nun konnte ich den Hacker jagen, wenn ich wollte; die Rückendeckung von oben
-hatte ich...</p>
-
+<p>Wir mussten herausfinden, was er schon getan hatte und was er noch tat! Vor allem mussten wir wissen, wer am anderen
+Ende der Leitung saß. " Es muss irgendein Student aus Berkeley sein " , sagte ich zu Roy, " das sind die Unix−Cracks,
+und uns halten sie für Blödmänner. " " Ich wäre da nicht so sicher. " Roy lehnte sich in seinem Sessel zurück. " Warum
+sollte jemand aus Berkeley durch Tymnet reinkommen, wenn er unser System doch viel einfacher über die Telefonleitungen
+anwählen könnte? " " Vielleicht ist Tymnet nur ein Deckmantel ", erwiderte ich, " ein Versteck. Wenn er das Labor
+direkt anwählen würde, könnten wir ihn verfolgen. Aber so müssen wir sowohl Tymnet als auch einen Telefonanruf
+verfolgen. "</p>
+<p>Mein Abwinken überzeugte den Chef nicht. Ob aus wissenschaftlicher Erfahrung oder aus zynischem Prinzip − Roy legte
+sich nicht fest: Es war so lange kein Student, bis man einen in sein Büro schleifte. Sicher, die Ausdrucke vom
+Wochenende zeigten einen guten Programmierer, aber es war auch möglich, dass wir irgendeinen kompetenten Computercrack
+von irgendwo beobachteten. Den Kerl zu verfolgen bedeutete, Telefonleitungen zu verfolgen.</p>
+<p>Der Preis für harte Beweise war harte Arbeit. Konfrontiert mit den Spuren eines mysteriösen Besuchers, sah Roy nur
+Fußabdrücke. Ich sah einen Eindringling. Roy entschied sich dafür, sich nicht zu entscheiden. " Stellen wir für heute
+alle Netzwerkverbindungen ein. Morgen früh werde ich mit dem Labordirektor reden und überlegen, was wir tun. "</p>
+<p>Wir konnten noch zuwarten, aber früher oder später mussten wir mit dem Verfolgen anfangen oder den Typ aussperren.
+Ich fragte mich, ob ich Lust hatte, jemanden zu verfolgen? Es würde mich von der wissenschaftlichen Arbeit abhalten,
+denri es hatte nichts zu tun mit Astronomie oder Physik. Und es roch so nach Räuber−und−Gendarm− oder Versteckspiel.
+Andererseits würde ich vielleicht etwas über Telefonverfolgungen und Netzwerke erfahren. Und das Beste war die
+Vorstellung, wie so ein Hacker aus der Wäsche gucken würde, wenn wir in seine Bude platzen und schreien würden: " Halt!
+Keine Bewegung ! Finger von der Tastatur! "</p>
+<p>Am Dienstagnachmittag rief Roy an. " Der Direktor sagt, das sei elektronischer Terrorismus. Nutzt alle Mittel, die
+ihr habt, um den Kerl zu fangen. Nehmt euch so viel Zeit, wie ihr braucht. Drei Wochen, wenn's sein muss. Aber nagelt
+den Burschen fest! " Nun konnte ich den Hacker jagen, wenn ich wollte; die Rückendeckung von oben hatte ich...</p>
 </div>
 </body>
 </html>
-

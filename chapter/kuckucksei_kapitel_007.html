@@ -1,166 +1,148 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html lang="de"><head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="de">
+<head>
+<meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
 <title>Clifford Stoll - Das Kuckucksei : Kapitel 7</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="../style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
 <div class="chapter">
-
 <p class="heading">7. Kapitel</p>
-<p>Tags darauf, nachdem wir beobachtet hatten, wie der Hacker in unser System eingebrochen war, traf
-sich der Chef mit Aletha Owens, der Rechtsanwältin des Labors. Aletha waren Computer egal, aber sie hatte ein waches
-Auge für Probleme am HorizontSie verlor keine Zeit und rief das FBI. Beim hiesigen FBl−Büro zog man nicht mal eine
-Augenbraue hoch. Fred Wyniken, Spezialagent der Zweigstelle Oakland, fragte ungläubig: " lhr ruft uns, weil ihr für 75
-Cents Rechenzeit verloren habt? " Aletha versuchte zu erklären, was Informationssicherheit ist und den Wert unserer
-Daten zu erläutern. Wyniken unterbrach sie und sagte: " Sehen Sie mal, wenn Sie den Verlust von mehr als einer Million
-Dollar vorweisen oder glaubhaft versichern können, dass jemand seine Nase in geheime Daten steckt, leiten wir ein
-Untersuchungsverfahren ein. Wenn nicht, dann lassen Sie uns bitte in Ruhe. "</p>
-
-<p>Richtig. Je nach Standpunkt waren unsere Daten entweder nichts wert oder zig Millionen Dollar.
-Wieviel ist die Struktur eines Enzyms wert? Was ist ein Hochtemperatursupraleiter wert? Das FBI dachte in völlig
-anderen Begriffen; wir lebten in einer Welt der Forschung. Geheime Daten? Wir waren weder ein Militärst ützpunkt noch
-eine Atomwaffenschmiede − Trotzdem brauchten wir die Unterstützung des FBI. Wenn der Hacker das nächste Mal sein
-Periskop ausfahren würde, konnten wir ihn wahrscheinlich bis zur Telefonnummer des Tymnet−AnSchlusses Oakland
-verfolgen. Von da würde uns, so hoffte ich, eine Fangschaltung zu ihm führen. Aber ich hatte gehört, dass die
-Telefongesellschaft ohne richterliche Genehmigung keine Leitung abhören würde. Und wir brauchten zunächst das FBI, um
-schließlich diese Genehmigung zu erhalten. Nachdem Aletha dort auf Granit gebissen hatte, rief sie den zuständigen
-Staatsanwalt an. Der Staatsanwalt von Oakland fakkelte nicht lange: " Was? Jemand bricht in Ihren Computer ein? Teufel
-auch, da holen wir uns doch eine Abhörgenehmigung und verfolgen diese Telefonleitungen. "</p>
-
-<p>Gegen Ende des Tages hatte Aletha die Verhandlungen mit Tymnet, der Telefongesellschaft und dem
-Staatsanwalt abgeschlossen. Mit der hiesigen Strafverfolgungsbehörde im Rücken war nun auf das FBI bestens zu pfeifen.
-Kurz nach fünf schaute Dave herein und fing an, über den Einbruch zu reden. " Cliff, der Hacker ist nicht aus Berkeley.
-" " Woher weißt du das ? " " Du hast doch gesehen, wie der Typ den Befehl “<span class="tester">ps −eafb</span>”
-eintippte, nicht wahr? " " Klar, da ist der Ausdruck " , antwortete ich. " Das ist ein gewöhnlicher Unix−Befehl, um
-alle aktiven Prozesse aufzulisten. “<span class="tester">ps</span>” heißt “<span class="tester">print status</span>”,
-und die vier Buchstaben modifizieren die Anzeige. Sie sind wie Knöpfe oder Tasten an einer Stereoanlage − sie
-modifizieren die Art und Weise, wie der Befehl zu funktionieren hat. " " Cliff, ich weiß wohl, dass du an Berkeley−Unix
-gewöhnt bist.<br></p>
-
-<p>Seit Berkeley−Unix erfunden wurde, haben wir ganz mechanisch “<span class="tester">ps</span>”
-getippt, wenn wir sehen wollten, was im System passierte. Aber sag mir, was modifizieren diese vier Buchstaben? " Dave
-wusste, dass ich von obskuren Unix−Befehlen keine Ahnung hatte. Ich schlug mich, so gut ich konnte: " Na, die
-“<span class="tester">e</span>”− Markierung bedeutet “<span class="tester">liste Prozessname und Systemumgebung
-auf</span>”, und die “<span class="tester">a</span>”−Markierung listet die Prozesse von allen auf − nicht bloß deine.
-Also wollte der Hacker sehen, was auf dem System lief. " " Okay, die Hälfte hast du. Und wofür sind die “<span class="tester">g</span>”− und die “<span class="tester">f</span>”− Markierungen? " " Weiß ich nicht. " Dave ließ mich
-zappeln, bis ich zugeben musste, dass ich nicht mehr weiterkam. " Du lässt mit “<span class="tester">g</span>”
-auflisten, wenn du sowohl interessante als auch uninteressante Prozesse haben willst. Die ganzen unwichtigen Jobs, wie
-die Abrechnung, werden auftauchen. Und alle HintergrundProzesse auch. " " Und wir wissen, dass er am
-Abrechnungsprogramm rumspielt. " Dave lächelte. " Bleibt uns also noch die “<span class="tester">f</span>”Markierung.
-Und die gibt es im Berkeley−Unix nicht. Das AT&amp;T−Unix listet so die Dateien jedes Prozesses auf. Das Berkeley−Unix
-macht das automatisch und braucht die “<span class="tester">f</span>”−Markierung nicht. Unser Freund kennt das
-Berkeley−Unix nicht. Er ist aus der Schule des altmodischen Unix. "</p>
-
-<p>Das Unix−Betriebssystem wurde in den frühen 70er Jahren in den Bell Laboratories von AT&amp;T in
-New Jersey entwickelt. In den späten Siebzigern besuchten Unix−Anhänger von AT&amp;T den Campus von Berkeley, und es
-wurde eine neue, mächtigere Version von Unix entwickelt. Neben freier Liebe, linker Politik und der Studentenbewegung
-ist Berkeley für seine Unix−Implementierung bekannt. Zwischen den Verfechtern des kleinen, kompakten AT&amp;T−Unix und
-denen der verfeinerten Berkeley−Version entstand ein Schisma. Trotz Konferenzen, Standards und Versprechungen stellte
-sich kein Konsens ein, und die Welt muss nun mit zwei konkurrierenden Unix−Betriebssystemen zurechtkommen. Natürlich
-verwendete unser Labor das Berkeley−Unix, wie das alle Leute mit Köpfchen tun. Angeblich haben die von der Ostküste
-eine Schwäche für das AT&amp;T−Unix, aber sie haben schliesslich auch nicht die freie Liebe entdeckt. Mit einem
-einzigen Buchstaben hatte Dave die gesamte datenverarbeitende Bevölkerung der Westküste ausgeschlossen.</p>
-
-<p>Es war auch denkbar, dass ein Hacker in Berkeley einen altmodischen Befehl benutzte, aber Dave
-glaubte nicht so recht daran. " Wir beobachten jemanden, der noch nie Berkeley−Unix verwendet hat. "'Dann hielt er den
-Atem an und flüsterte: " Ein Heide. " Wayne scherte sich keinen Deut um Unix. Als VMS−Junkie war Wayne ein Ungläubiger.
-Außerdem glaubte er, dass der Hacker mit unserer Passwortdatei überhaupt nichts anfangen konnte: " Sieh mal niemand
-kann auf irgendeine Weise diese Passwörter dechiffrieren. Alles, was er vielleicht erfahren hat, sind unsere Namen. Was
-soll die Aufregung? "</p>
-
-<p>Ich bewegte das in meinem Herzen. Ein Wissenschaftler mit Konten in verschiedenen Computern würde
-für jedes Konto dasselbe Passwort verwenden. Wenn der Hacker Passwörter für den Unix− 4−Computer kannte, konnte er
-versuchen, in die benachbarten LBL−Computer einzudringen. Wenn er in unseren geschützten Unix−8−Computer hinein wollte,
-na, warum dann nicht einige der Passwörter von der Unix−4−Maschine ausprobieren? Wenn er Passwörter aus einem System
-benutzen konnte, um in ein anderes einzubrechen, würden Dutzende Systeme fallen wie Dominosteine.</p>
-
-<p>Passwörter sind das Herzstück der Sicherheit in einem Großrechner PC brauchen keine Passwörter: Es
-gibt nur einen Benutzer. Jeder an der Tastatur kann auf jedes Programm zugreifen. Wenn aber zehn oder zwanzig Leute ein
-einziges System benutzen, muss der Computer sicher sein, dass die Person hinter dem Terminal kein Betrüger ist.
-Passwörter bestätigen die Authentizität einer Übertragung wie eine elektronische Unterschrift.</p>
-
-<p>Zählautomaten Telefonkreditkarten, elektronischer Zahlungsverkehr, sogar einige Anrufbeantworter
-hängen von Passwörtern ab. Wenn ein Hacker Passwörter klaut oder fälscht, kann er Guthaben vortäuschen,
-Dienstleistungen umsonst in Anspruch nehmen oder geplatzte Schecks einlösen. Als noch Geld in Tresoren aufbewahrt
-wurde, hatten es Safeknacker auf die Zahlenschlösser abgesehen. Heute, wo die Sicherheitsmaßnahmen nur noch Bits in
-Computerspeichern sind, sind Diebe hinter den Passwörtern her.</p>
-
-<p>Wenn ein Computer fünfzig oder hundert Benutzer hat, kann man einfach das Passwort jeder Person in
-einer Datei speichern. Wenn der Benutzer sich einloggen will, bittet der Computer ihn um sein Passwort und vergleicht
-es mit dem in der Datei. In einer freundlich gesinnten Welt kein Problem. Aber wie hält man jemanden davon ab, der
-einem in die Passwortdatei gucken will? Na, man schützt die Passwortdatei so, dass nur das System sie lesen kann. Auch
-wenn man die Passwortdatei schützt, werden von Zeit zu Zeit von allen Dateien Sicherungskopien gezogen. Sogar ein
-Programmierneuling könnte diese Bänder auf einem andern Computer lesen und die Inhalte der Passwortdatei auflisten.
-Dateienschutz allein genügt nicht. 1975</p>
-
-<p>entwickelten Robert Morris und Fred Grampp von den Bell Laboratories eine Möglichkeit, Passwörter
-auch dann zu schützen, wenn die Dateien nicht sicher waren. Sie setzten auf Chiffrierung anstelle von Dateienschutz.
-Wenn man das Passwort “<span class="tester">cradle</span>” wählt, speichert man dieses Wort nicht einfach in eine
-Passwortdatei. Statt dessen vermanscht Unix die Buchstaben zu einem verschlüsselten Wort, etwa “<span class="tester">pn6yywersyq</span>”. Das verschlüsselte Passwort wird gespeichert, nicht der offene Text. Eine
+<p>Tags darauf, nachdem wir beobachtet hatten, wie der Hacker in unser System eingebrochen war, traf sich der Chef mit
+Aletha Owens, der Rechtsanwältin des Labors. Aletha waren Computer egal, aber sie hatte ein waches Auge für Probleme am
+HorizontSie verlor keine Zeit und rief das FBI. Beim hiesigen FBl−Büro zog man nicht mal eine Augenbraue hoch. Fred
+Wyniken, Spezialagent der Zweigstelle Oakland, fragte ungläubig: " lhr ruft uns, weil ihr für 75 Cents Rechenzeit
+verloren habt? " Aletha versuchte zu erklären, was Informationssicherheit ist und den Wert unserer Daten zu erläutern.
+Wyniken unterbrach sie und sagte: " Sehen Sie mal, wenn Sie den Verlust von mehr als einer Million Dollar vorweisen
+oder glaubhaft versichern können, dass jemand seine Nase in geheime Daten steckt, leiten wir ein Untersuchungsverfahren
+ein. Wenn nicht, dann lassen Sie uns bitte in Ruhe. "</p>
+<p>Richtig. Je nach Standpunkt waren unsere Daten entweder nichts wert oder zig Millionen Dollar. Wieviel ist die
+Struktur eines Enzyms wert? Was ist ein Hochtemperatursupraleiter wert? Das FBI dachte in völlig anderen Begriffen; wir
+lebten in einer Welt der Forschung. Geheime Daten? Wir waren weder ein Militärst ützpunkt noch eine Atomwaffenschmiede
+− Trotzdem brauchten wir die Unterstützung des FBI. Wenn der Hacker das nächste Mal sein Periskop ausfahren würde,
+konnten wir ihn wahrscheinlich bis zur Telefonnummer des Tymnet−AnSchlusses Oakland verfolgen. Von da würde uns, so
+hoffte ich, eine Fangschaltung zu ihm führen. Aber ich hatte gehört, dass die Telefongesellschaft ohne richterliche
+Genehmigung keine Leitung abhören würde. Und wir brauchten zunächst das FBI, um schließlich diese Genehmigung zu
+erhalten. Nachdem Aletha dort auf Granit gebissen hatte, rief sie den zuständigen Staatsanwalt an. Der Staatsanwalt von
+Oakland fakkelte nicht lange: " Was? Jemand bricht in Ihren Computer ein? Teufel auch, da holen wir uns doch eine
+Abhörgenehmigung und verfolgen diese Telefonleitungen. "</p>
+<p>Gegen Ende des Tages hatte Aletha die Verhandlungen mit Tymnet, der Telefongesellschaft und dem Staatsanwalt
+abgeschlossen. Mit der hiesigen Strafverfolgungsbehörde im Rücken war nun auf das FBI bestens zu pfeifen. Kurz nach
+fünf schaute Dave herein und fing an, über den Einbruch zu reden. " Cliff, der Hacker ist nicht aus Berkeley. " " Woher
+weißt du das ? " " Du hast doch gesehen, wie der Typ den Befehl “<span class="tester">ps −eafb</span>” eintippte, nicht
+wahr? " " Klar, da ist der Ausdruck " , antwortete ich. " Das ist ein gewöhnlicher Unix−Befehl, um alle aktiven
+Prozesse aufzulisten. “<span class="tester">ps</span>” heißt “<span class="tester">print status</span>”, und die vier
+Buchstaben modifizieren die Anzeige. Sie sind wie Knöpfe oder Tasten an einer Stereoanlage − sie modifizieren die Art
+und Weise, wie der Befehl zu funktionieren hat. " " Cliff, ich weiß wohl, dass du an Berkeley−Unix gewöhnt
+bist.<br></p>
+<p>Seit Berkeley−Unix erfunden wurde, haben wir ganz mechanisch “<span class="tester">ps</span>” getippt, wenn wir
+sehen wollten, was im System passierte. Aber sag mir, was modifizieren diese vier Buchstaben? " Dave wusste, dass ich
+von obskuren Unix−Befehlen keine Ahnung hatte. Ich schlug mich, so gut ich konnte: " Na, die “<span class=
+"tester">e</span>”− Markierung bedeutet “<span class="tester">liste Prozessname und Systemumgebung auf</span>”, und die
+“<span class="tester">a</span>”−Markierung listet die Prozesse von allen auf − nicht bloß deine. Also wollte der Hacker
+sehen, was auf dem System lief. " " Okay, die Hälfte hast du. Und wofür sind die “<span class="tester">g</span>”− und
+die “<span class="tester">f</span>”− Markierungen? " " Weiß ich nicht. " Dave ließ mich zappeln, bis ich zugeben
+musste, dass ich nicht mehr weiterkam. " Du lässt mit “<span class="tester">g</span>” auflisten, wenn du sowohl
+interessante als auch uninteressante Prozesse haben willst. Die ganzen unwichtigen Jobs, wie die Abrechnung, werden
+auftauchen. Und alle HintergrundProzesse auch. " " Und wir wissen, dass er am Abrechnungsprogramm rumspielt. " Dave
+lächelte. " Bleibt uns also noch die “<span class="tester">f</span>”Markierung. Und die gibt es im Berkeley−Unix nicht.
+Das AT&amp;T−Unix listet so die Dateien jedes Prozesses auf. Das Berkeley−Unix macht das automatisch und braucht die
+“<span class="tester">f</span>”−Markierung nicht. Unser Freund kennt das Berkeley−Unix nicht. Er ist aus der Schule des
+altmodischen Unix. "</p>
+<p>Das Unix−Betriebssystem wurde in den frühen 70er Jahren in den Bell Laboratories von AT&amp;T in New Jersey
+entwickelt. In den späten Siebzigern besuchten Unix−Anhänger von AT&amp;T den Campus von Berkeley, und es wurde eine
+neue, mächtigere Version von Unix entwickelt. Neben freier Liebe, linker Politik und der Studentenbewegung ist Berkeley
+für seine Unix−Implementierung bekannt. Zwischen den Verfechtern des kleinen, kompakten AT&amp;T−Unix und denen der
+verfeinerten Berkeley−Version entstand ein Schisma. Trotz Konferenzen, Standards und Versprechungen stellte sich kein
+Konsens ein, und die Welt muss nun mit zwei konkurrierenden Unix−Betriebssystemen zurechtkommen. Natürlich verwendete
+unser Labor das Berkeley−Unix, wie das alle Leute mit Köpfchen tun. Angeblich haben die von der Ostküste eine Schwäche
+für das AT&amp;T−Unix, aber sie haben schliesslich auch nicht die freie Liebe entdeckt. Mit einem einzigen Buchstaben
+hatte Dave die gesamte datenverarbeitende Bevölkerung der Westküste ausgeschlossen.</p>
+<p>Es war auch denkbar, dass ein Hacker in Berkeley einen altmodischen Befehl benutzte, aber Dave glaubte nicht so
+recht daran. " Wir beobachten jemanden, der noch nie Berkeley−Unix verwendet hat. "'Dann hielt er den Atem an und
+flüsterte: " Ein Heide. " Wayne scherte sich keinen Deut um Unix. Als VMS−Junkie war Wayne ein Ungläubiger. Außerdem
+glaubte er, dass der Hacker mit unserer Passwortdatei überhaupt nichts anfangen konnte: " Sieh mal niemand kann auf
+irgendeine Weise diese Passwörter dechiffrieren. Alles, was er vielleicht erfahren hat, sind unsere Namen. Was soll die
+Aufregung? "</p>
+<p>Ich bewegte das in meinem Herzen. Ein Wissenschaftler mit Konten in verschiedenen Computern würde für jedes Konto
+dasselbe Passwort verwenden. Wenn der Hacker Passwörter für den Unix− 4−Computer kannte, konnte er versuchen, in die
+benachbarten LBL−Computer einzudringen. Wenn er in unseren geschützten Unix−8−Computer hinein wollte, na, warum dann
+nicht einige der Passwörter von der Unix−4−Maschine ausprobieren? Wenn er Passwörter aus einem System benutzen konnte,
+um in ein anderes einzubrechen, würden Dutzende Systeme fallen wie Dominosteine.</p>
+<p>Passwörter sind das Herzstück der Sicherheit in einem Großrechner PC brauchen keine Passwörter: Es gibt nur einen
+Benutzer. Jeder an der Tastatur kann auf jedes Programm zugreifen. Wenn aber zehn oder zwanzig Leute ein einziges
+System benutzen, muss der Computer sicher sein, dass die Person hinter dem Terminal kein Betrüger ist. Passwörter
+bestätigen die Authentizität einer Übertragung wie eine elektronische Unterschrift.</p>
+<p>Zählautomaten Telefonkreditkarten, elektronischer Zahlungsverkehr, sogar einige Anrufbeantworter hängen von
+Passwörtern ab. Wenn ein Hacker Passwörter klaut oder fälscht, kann er Guthaben vortäuschen, Dienstleistungen umsonst
+in Anspruch nehmen oder geplatzte Schecks einlösen. Als noch Geld in Tresoren aufbewahrt wurde, hatten es Safeknacker
+auf die Zahlenschlösser abgesehen. Heute, wo die Sicherheitsmaßnahmen nur noch Bits in Computerspeichern sind, sind
+Diebe hinter den Passwörtern her.</p>
+<p>Wenn ein Computer fünfzig oder hundert Benutzer hat, kann man einfach das Passwort jeder Person in einer Datei
+speichern. Wenn der Benutzer sich einloggen will, bittet der Computer ihn um sein Passwort und vergleicht es mit dem in
+der Datei. In einer freundlich gesinnten Welt kein Problem. Aber wie hält man jemanden davon ab, der einem in die
+Passwortdatei gucken will? Na, man schützt die Passwortdatei so, dass nur das System sie lesen kann. Auch wenn man die
+Passwortdatei schützt, werden von Zeit zu Zeit von allen Dateien Sicherungskopien gezogen. Sogar ein Programmierneuling
+könnte diese Bänder auf einem andern Computer lesen und die Inhalte der Passwortdatei auflisten. Dateienschutz allein
+genügt nicht. 1975</p>
+<p>entwickelten Robert Morris und Fred Grampp von den Bell Laboratories eine Möglichkeit, Passwörter auch dann zu
+schützen, wenn die Dateien nicht sicher waren. Sie setzten auf Chiffrierung anstelle von Dateienschutz. Wenn man das
+Passwort “<span class="tester">cradle</span>” wählt, speichert man dieses Wort nicht einfach in eine Passwortdatei.
+Statt dessen vermanscht Unix die Buchstaben zu einem verschlüsselten Wort, etwa “<span class=
+"tester">pn6yywersyq</span>”. Das verschlüsselte Passwort wird gespeichert, nicht der offene Text. Eine
 UnixPasswortdatei würde also etwa so aussehen:</p>
-
 <p class="teletype">Aaron: fnqs24xkcvs<br>
 Blacker: anvpqwOxcsr<br>
 Blatz: pn6yywersyq<br>
 Goldman: mwe785jcyX 2<br>
 Henderson: rp2d9cX49b7</p>
-
-<p>Hinter jedem Kontennamen steht das verschlüsselte Passwort. Wie Wayne sagte: " Wer die
-Passwortliste klaut, kriegt nur 'ne Liste von Leuten. "</p>
-
-<p>Das Computerprogramm, das “<span class="tester">cradle</span>” zu “<span class="tester">pn6yywersyg</span>” chiffriert, beruht auf einem Falltür−Algorithmus: ein Prozess, der vorwärts einfach geht,
-aber zurück schwierig. Wenn Sally Blatz sich einloggt, tippt sie ihren Kontennamen “<span class="tester">Blatz</span>”
-ein und dann ihr Passwort “<span class="tester">cradle</span>”. Das System verschlüsselt das Passwort zu “<span class="tester">pn6yywersyg</span> ” und vergleicht das mit der Eingabe in der Passwortdatei. Wenn die verschlüsselten
-Eingaben nicht miteinander übereinstimmen, fliegt Sally aus der Maschine. Das lesbare Wort selbst wird nicht
-verglichen, sondern die Chiffrierung. Die Passwortsicherheit hängt von der Falltürfunktion ab.</p>
-
-<p>Falltürfunktionen sind mathematische Ratschen: Man kann sie vorwärts drehen, aber nicht rückwärts.
-Sie übersetzen Text rasch in Chiffren. Um diese Schlüssel diebstahlsicher zu machen, muss es unmöglich sein, den
-Algorithmus umzudrehen. Unsere Falltüren waren nach dem Data Encryption Standard (DES) konstruiert, der von IBM und der
-National Security Agency (NSA) entwickelt wurde. Wir hatten Gerüchte gehört, die elektronischen Super−Schnüffler der
-NSA hätten den DES geschwächt, weil sie dessen interne Schlüssel beschnitten hätten: Sie banden sie so kurz an, dass
-sie von der NSA geknackt werden konnten, ließen sie aber so stark, dass sie den Versuchen gewöhnlicher Sterblicher
-widerstanden. Man flüstert, auf diese Weise könnte die NSA den Code knacken und Nachrichten lesen, aber niemand
-sonst.</p>
-
-<p>Das DES−Chiffrierprogramm in unserem Unix−Computer war allgemein zugänglich. Jeder konnte es
-studieren. Die NSA hatte seine Stärken und Schwächen analysiert, die Berichte jedoch waren geheim. Gelegentlich hatten
-wir zwar Gerüchte gehört, jemand habe diesen Code geknackt, aber nie bestätigte sich das. Bevor die NSA ihre Analysen
-des DES nicht veröffentlichte, mussten wir eben darauf vertrauen, dass unsere Chiffrierung stark genug war.</p>
-
-<p>Wayne und ich hatten den Hacker beobachtet, wie er einbrach und unsere Passwortdatei stahl. Der
-Hacker kannte jetzt die Namen von ein paar hundert Wissenschaftlern. Er hätte sich auch unser Telefonbuch holen können
-− in denen standen wenigstens noch die Adressen. Wenn er nicht einen Cray−Supercomputer besaß, konnte er die
-Falltürfunktion nicht umdrehen, und unsere Passwortdatei blieb sicher. Wayne war immer noch beunruhigt. " Vielleicht
-ist dieser Kerl auf eine geniale Möglichkeit gestoßen, die Falltürfunktion umzudrehen. Wir sollten eine Spur
-vorsichtiger sein und unsere wichtigen Passwörter ändern.</p>
-
-<p>Dagegen konnte ich kaum etwas einwenden. Das Systempasswort war seit ein paar Jahren nicht geändert
-worden und hatte schon einige Leute überdauert, die gehevert und gefevert worden waren. Ich hatte nichts dagegen, mein
-Passwort zu ändern, und um sicherzugehen, benutzte ich für jeden Computer ein anderes Passwort. Wenn es dem Hacker
-gelang, mein Passwort für den Unix−4−Computer herauszufinden, hätte er damit noch keine größere Chance, es bei den
-anderen zu erraten. Bevor ich nach Hause radelte, sah ich noch mal den Ausdruck der Sitzung des vorigen Tages durch. In
-den zehn Seiten lagen Hinweise auf die Person des Hackers, seinen Standort und seine Absichten verborgen. Aber zuviel
+<p>Hinter jedem Kontennamen steht das verschlüsselte Passwort. Wie Wayne sagte: " Wer die Passwortliste klaut, kriegt
+nur 'ne Liste von Leuten. "</p>
+<p>Das Computerprogramm, das “<span class="tester">cradle</span>” zu “<span class="tester">pn6yywersyg</span>”
+chiffriert, beruht auf einem Falltür−Algorithmus: ein Prozess, der vorwärts einfach geht, aber zurück schwierig. Wenn
+Sally Blatz sich einloggt, tippt sie ihren Kontennamen “<span class="tester">Blatz</span>” ein und dann ihr Passwort
+“<span class="tester">cradle</span>”. Das System verschlüsselt das Passwort zu “<span class="tester">pn6yywersyg</span>
+” und vergleicht das mit der Eingabe in der Passwortdatei. Wenn die verschlüsselten Eingaben nicht miteinander
+übereinstimmen, fliegt Sally aus der Maschine. Das lesbare Wort selbst wird nicht verglichen, sondern die Chiffrierung.
+Die Passwortsicherheit hängt von der Falltürfunktion ab.</p>
+<p>Falltürfunktionen sind mathematische Ratschen: Man kann sie vorwärts drehen, aber nicht rückwärts. Sie übersetzen
+Text rasch in Chiffren. Um diese Schlüssel diebstahlsicher zu machen, muss es unmöglich sein, den Algorithmus
+umzudrehen. Unsere Falltüren waren nach dem Data Encryption Standard (DES) konstruiert, der von IBM und der National
+Security Agency (NSA) entwickelt wurde. Wir hatten Gerüchte gehört, die elektronischen Super−Schnüffler der NSA hätten
+den DES geschwächt, weil sie dessen interne Schlüssel beschnitten hätten: Sie banden sie so kurz an, dass sie von der
+NSA geknackt werden konnten, ließen sie aber so stark, dass sie den Versuchen gewöhnlicher Sterblicher widerstanden.
+Man flüstert, auf diese Weise könnte die NSA den Code knacken und Nachrichten lesen, aber niemand sonst.</p>
+<p>Das DES−Chiffrierprogramm in unserem Unix−Computer war allgemein zugänglich. Jeder konnte es studieren. Die NSA
+hatte seine Stärken und Schwächen analysiert, die Berichte jedoch waren geheim. Gelegentlich hatten wir zwar Gerüchte
+gehört, jemand habe diesen Code geknackt, aber nie bestätigte sich das. Bevor die NSA ihre Analysen des DES nicht
+veröffentlichte, mussten wir eben darauf vertrauen, dass unsere Chiffrierung stark genug war.</p>
+<p>Wayne und ich hatten den Hacker beobachtet, wie er einbrach und unsere Passwortdatei stahl. Der Hacker kannte jetzt
+die Namen von ein paar hundert Wissenschaftlern. Er hätte sich auch unser Telefonbuch holen können − in denen standen
+wenigstens noch die Adressen. Wenn er nicht einen Cray−Supercomputer besaß, konnte er die Falltürfunktion nicht
+umdrehen, und unsere Passwortdatei blieb sicher. Wayne war immer noch beunruhigt. " Vielleicht ist dieser Kerl auf eine
+geniale Möglichkeit gestoßen, die Falltürfunktion umzudrehen. Wir sollten eine Spur vorsichtiger sein und unsere
+wichtigen Passwörter ändern.</p>
+<p>Dagegen konnte ich kaum etwas einwenden. Das Systempasswort war seit ein paar Jahren nicht geändert worden und hatte
+schon einige Leute überdauert, die gehevert und gefevert worden waren. Ich hatte nichts dagegen, mein Passwort zu
+ändern, und um sicherzugehen, benutzte ich für jeden Computer ein anderes Passwort. Wenn es dem Hacker gelang, mein
+Passwort für den Unix−4−Computer herauszufinden, hätte er damit noch keine größere Chance, es bei den anderen zu
+erraten. Bevor ich nach Hause radelte, sah ich noch mal den Ausdruck der Sitzung des vorigen Tages durch. In den zehn
+Seiten lagen Hinweise auf die Person des Hackers, seinen Standort und seine Absichten verborgen. Aber zuviel
 widersprach sich: Wir hatten ihn durch Tymnet in Oakland, Kalifornien, geortet. Aber Dave glaubte nicht, dass er aus
 Berkeley war.</p>
-
-<p>Er kopierte unsere Passwortdatei, obwohl unsere Chiffrierung nur Buchstabensalat daraus machte. Und
-was machte er mit unseren verschlüsselten Passwörtern? In mancher Hinsicht war es wie Astronomie. Wir beobachteten
-passiv ein Phänomen und versuchten aufgrund einiger Hinweise, das Ereignis zu erklären und die Quelle zu lokalisieren.
-Astronomen sind daran gewöhnt, still und leise Daten zu sammeln, indem sie auf einem Berggipfel durch ein Teleskop
-starren. Hier wie dort tauchten die Daten sporadisch, aus unbekannter Quelle auf. Statt Thermodynamik und Optik musste
-ich jetzt Chiffriermethoden und Betriebssysteme verstehen. Auf irgendeine Weise bestand eine physische Verbindung
-zwischen unserem System und einem wer weiß wie weit entfernten Terminal. Durch Anwendung gewöhnlicher Physik musste es
-möglich sein, zu verstehen, was da passierte.</p>
-
-<p>Physik: Das war der Schlüssel, erkannte ich. Zeichne deine Beobachtungen auf. Wende physikalische
-Prinzipien an. Spekuliere, aber traue nur bewiesenen Schlussfolgerungen. Wenn ich irgendwelche Fortschritte machen
-wollte, musste ich die Aufgabe wie ein Physikproblem für Erstsemester angehen. Zeit, mein Tagebuch auf den neuesten
-Stand zu bringen.</p>
-
+<p>Er kopierte unsere Passwortdatei, obwohl unsere Chiffrierung nur Buchstabensalat daraus machte. Und was machte er
+mit unseren verschlüsselten Passwörtern? In mancher Hinsicht war es wie Astronomie. Wir beobachteten passiv ein
+Phänomen und versuchten aufgrund einiger Hinweise, das Ereignis zu erklären und die Quelle zu lokalisieren. Astronomen
+sind daran gewöhnt, still und leise Daten zu sammeln, indem sie auf einem Berggipfel durch ein Teleskop starren. Hier
+wie dort tauchten die Daten sporadisch, aus unbekannter Quelle auf. Statt Thermodynamik und Optik musste ich jetzt
+Chiffriermethoden und Betriebssysteme verstehen. Auf irgendeine Weise bestand eine physische Verbindung zwischen
+unserem System und einem wer weiß wie weit entfernten Terminal. Durch Anwendung gewöhnlicher Physik musste es möglich
+sein, zu verstehen, was da passierte.</p>
+<p>Physik: Das war der Schlüssel, erkannte ich. Zeichne deine Beobachtungen auf. Wende physikalische Prinzipien an.
+Spekuliere, aber traue nur bewiesenen Schlussfolgerungen. Wenn ich irgendwelche Fortschritte machen wollte, musste ich
+die Aufgabe wie ein Physikproblem für Erstsemester angehen. Zeit, mein Tagebuch auf den neuesten Stand zu bringen.</p>
 </div>
 </body>
 </html>
-
